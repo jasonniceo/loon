@@ -17,13 +17,13 @@ token 获取方式 :
 [task]
 
 # 备份
-0 10 * * * https://raw.githubusercontent.com/dompling/Script/master/gist/backup.js
+0 10 * * * https://raw.githubusercontent.com/jasonniceo/Script/refs/heads/master/gist/backup.js
 
 # 缓存历史纪录
-5 10 * * * https://raw.githubusercontent.com/dompling/Script/master/gist/commit.js
+5 10 * * * https://raw.githubusercontent.com/jasonniceo/Script/refs/heads/master/gist/commit.js
 
 # 恢复
-5 10 * * * https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js
+5 10 * * * https://raw.githubusercontent.com/jasonniceo/Script/refs/heads/master/gist/restore.js
 
  */
 
