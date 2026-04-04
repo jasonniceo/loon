@@ -1,64 +1,36 @@
 /*
-Loon 远程脚本：m.tb.cn短链接自动跳转
-功能：自动将m.tb.cn短链接转换为中转链接
+Loon 远程脚本：m.tb.cn短链接自动跳转指定中转地址
+功能：拦截淘宝短链，自动跳转到指定中转地址
 更新时间：2026-04
 */
 
-const targetPrefix = "https://f.m.taobao.com/wow/pone/pcraft/common/common-redirect?wh_pid=";
+const redirectPrefix = "https://f.m.taobao.com/wow/pone/pcraft/common/common-redirect?wh_pid=";
 
 if (typeof $request !== 'undefined') {
-    // 脚本模式
-    const url = $request.url;
+    // 这是作为HTTP请求拦截器使用
+    const originalUrl = $request.url;
     
-    // 只处理m.tb.cn域名
-    if (url.includes("m.tb.cn")) {
-        try {
-            // URL编码处理
-            const encodedUrl = encodeURIComponent(url);
-            const finalUrl = targetPrefix + encodedUrl;
-            
-            console.log(`原始链接: ${url}`);
-            console.log(`跳转链接: ${finalUrl}`);
-            
-            $done({
-                response: {
-                    status: 302,
-                    headers: {
-                        "Location": finalUrl,
-                        "Cache-Control": "no-cache, no-store, must-revalidate"
-                    }
+    // 匹配m.tb.cn域名
+    if (originalUrl.includes('m.tb.cn')) {
+        const encodedUrl = encodeURIComponent(originalUrl);
+        const finalUrl = redirectPrefix + encodedUrl;
+        
+        console.log(`[淘宝短链转换] 原始: ${originalUrl}`);
+        console.log(`[淘宝短链转换] 目标: ${finalUrl}`);
+        
+        $done({
+            response: {
+                status: 302,
+                headers: {
+                    "Location": finalUrl
                 }
-            });
-        } catch (error) {
-            console.log(`处理失败: ${error}`);
-            $done({});
-        }
+            }
+        });
     } else {
         $done({});
     }
 } else {
-    // 重写规则模式
-    $done({
-        "name": "淘宝短链接跳转",
-        "desc": "自动跳转m.tb.cn链接",
-        "rules": [
-            {
-                "match": `^https?://m\\.tb\\.cn/`,
-                "script": `
-                    const url = $request.url;
-                    const encoded = encodeURIComponent(url);
-                    const redirectUrl = "${targetPrefix}" + encoded;
-                    
-                    $done({
-                        response: {
-                            status: 302,
-                            headers: {
-                                "Location": redirectUrl
-                            }
-                        }
-                    });
-                `
-            }
-        ]
-    });
+    // 这是作为主页小部件或快捷指令使用
+    console.log("脚本已加载，等待HTTP请求触发...");
+    $done({});
 }
