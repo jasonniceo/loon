@@ -1,36 +1,48 @@
 /*
-Loon 远程脚本：m.tb.cn短链接自动跳转指定中转地址
-功能：拦截淘宝短链，自动跳转到指定中转地址
-更新时间：2026-04
+Loon 淘宝短链自动跳转
+使用方式：配置为HTTP请求脚本
 */
 
+const targetDomains = ["m.tb.cn"];
 const redirectPrefix = "https://f.m.taobao.com/wow/pone/pcraft/common/common-redirect?wh_pid=";
 
+// 主处理函数
 if (typeof $request !== 'undefined') {
-    // 这是作为HTTP请求拦截器使用
-    const originalUrl = $request.url;
+    handleRequest($request);
+}
+
+function handleRequest(request) {
+    const url = request.url;
     
-    // 匹配m.tb.cn域名
-    if (originalUrl.includes('m.tb.cn')) {
-        const encodedUrl = encodeURIComponent(originalUrl);
+    // 检查是否是目标域名
+    const isTarget = targetDomains.some(domain => url.includes(domain));
+    
+    if (!isTarget) {
+        $done({});
+        return;
+    }
+    
+    try {
+        // 编码URL
+        const encodedUrl = encodeURIComponent(url);
         const finalUrl = redirectPrefix + encodedUrl;
         
-        console.log(`[淘宝短链转换] 原始: ${originalUrl}`);
-        console.log(`[淘宝短链转换] 目标: ${finalUrl}`);
+        console.log(`淘宝短链跳转：
+        原始链接: ${url}
+        目标链接: ${finalUrl}`);
         
+        // 返回302重定向
         $done({
             response: {
                 status: 302,
                 headers: {
-                    "Location": finalUrl
+                    "Location": finalUrl,
+                    "Cache-Control": "no-cache, no-store, must-revalidate"
                 }
             }
         });
-    } else {
+    } catch (error) {
+        console.error(`跳转失败: ${error}`);
         $done({});
     }
-} else {
-    // 这是作为主页小部件或快捷指令使用
-    console.log("脚本已加载，等待HTTP请求触发...");
-    $done({});
 }
