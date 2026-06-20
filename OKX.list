@@ -1,0 +1,29 @@
+# > OKX 核心域名
+DOMAIN-SUFFIX,okx.com
+DOMAIN-SUFFIX,okex.com
+DOMAIN-SUFFIX,okex.me
+DOMAIN-SUFFIX,okex.org
+DOMAIN-SUFFIX,okcoin.com
+
+# > OKX 区块链浏览器及生态
+DOMAIN-SUFFIX,oklink.com
+DOMAIN-SUFFIX,oklink.org
+
+# > OKX 数据、API 与 DNS 支持域名
+DOMAIN-SUFFIX,okx-dns.com
+DOMAIN-SUFFIX,okx-dns1.com
+DOMAIN-SUFFIX,okx-dns2.com
+DOMAIN-SUFFIX,okx-dns3.com
+DOMAIN-SUFFIX,okx.com.cdn.cloudflare.net
+
+# > OKX 国内常用访问域名/镜像站 (防 DNS 污染及直连被阻断)
+DOMAIN-SUFFIX,ouyi.tv
+DOMAIN-SUFFIX,ouyic.com
+DOMAIN-SUFFIX,ouyic.xyz
+DOMAIN-SUFFIX,ouyiy.com
+DOMAIN-SUFFIX,ouyiy.cc
+
+# > 关键字匹配 (兜底拦截)
+DOMAIN-KEYWORD,okex
+DOMAIN-KEYWORD,okx
+DOMAIN-KEYWORD,ouyi
