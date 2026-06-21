@@ -1,0 +1,43 @@
+# > Vodafone 核心与全球官网
+DOMAIN-SUFFIX,vodafone.com
+DOMAIN-SUFFIX,vodafone.net
+DOMAIN-SUFFIX,vodafone.tech
+
+# > Vodafone 欧洲区 (英国、德国、意大利、西班牙等)
+DOMAIN-SUFFIX,vodafone.co.uk
+DOMAIN-SUFFIX,vodafone.de
+DOMAIN-SUFFIX,vodafone-ip.de
+DOMAIN-SUFFIX,vodafonemail.de
+DOMAIN-SUFFIX,vodafoneshop.de
+DOMAIN-SUFFIX,vdfm.de
+DOMAIN-SUFFIX,vodafone.it
+DOMAIN-SUFFIX,vodafone.es
+DOMAIN-SUFFIX,vodafone.pt
+DOMAIN-SUFFIX,vodafone.ie
+DOMAIN-SUFFIX,vodafone.gr
+DOMAIN-SUFFIX,vodafone.nl
+DOMAIN-SUFFIX,vodafone.cz
+DOMAIN-SUFFIX,vodafone.ro
+DOMAIN-SUFFIX,vodafone.hu
+DOMAIN-SUFFIX,vodafone.al
+
+# > Vodafone 亚太区 (澳大利亚、新西兰、印度等)
+DOMAIN-SUFFIX,vodafone.com.au
+DOMAIN-SUFFIX,vodafone.co.nz
+DOMAIN-SUFFIX,one.nz
+DOMAIN-SUFFIX,vodafoneidea.com
+DOMAIN-SUFFIX,myvi.in
+
+# > Vodafone 中东与非洲区 (含旗下 Vodacom 及中东分支)
+DOMAIN-SUFFIX,vodacom.com
+DOMAIN-SUFFIX,vodacom.co.za
+DOMAIN-SUFFIX,vodacom.co.mz
+DOMAIN-SUFFIX,vodacom.cd
+DOMAIN-SUFFIX,vodacom.co.tz
+DOMAIN-SUFFIX,vodafone.com.eg
+DOMAIN-SUFFIX,vodafone.qa
+DOMAIN-SUFFIX,vodafone.com.gh
+
+# > 关键字匹配 (兜底拦截，覆盖可能遗漏的短链接、CDN 或 API 服务)
+DOMAIN-KEYWORD,vodafone
+DOMAIN-KEYWORD,vodacom
