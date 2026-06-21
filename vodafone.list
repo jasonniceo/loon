@@ -5,6 +5,7 @@ DOMAIN-SUFFIX,vodafone.tech
 
 # > Vodafone 欧洲区 (英国、德国、意大利、西班牙等)
 DOMAIN-SUFFIX,vodafone.co.uk
+DOMAIN-SUFFIX,mva.softlogin.vodafone.co.uk
 DOMAIN-SUFFIX,vodafone.de
 DOMAIN-SUFFIX,vodafone-ip.de
 DOMAIN-SUFFIX,vodafonemail.de
