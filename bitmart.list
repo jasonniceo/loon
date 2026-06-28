@@ -1,17 +1,16 @@
-# > BitMart 核心交易与官网域名
+# > BitMart 国际主站及常规服务
 DOMAIN-SUFFIX,bitmart.com
-DOMAIN-SUFFIX,bitmart.io
 DOMAIN-SUFFIX,bitmart.news
-DOMAIN-SUFFIX,bmx.fund
+DOMAIN-SUFFIX,bitmart.studio
 
-# > BitMart 备用与国际域名
-DOMAIN-SUFFIX,bitmartglobal.com
-DOMAIN-SUFFIX,bitmartplus.com
+# > BitMart 核心 API、数据接口与移动端 APP 通信
+DOMAIN-SUFFIX,bitmart.api
+DOMAIN-SUFFIX,bitmart.one
+DOMAIN-SUFFIX,bmart.cc
 
-# > API、Websocket 与数据分析服务
-DOMAIN-SUFFIX,bmx-api.com
-DOMAIN-SUFFIX,bitmart.api.stdlib.com
+# > BitMart 静态资源与 CDN 加速 (保障页面和 APP 样式正常加载)
+DOMAIN-SUFFIX,bmstatic.com
+DOMAIN-SUFFIX,bitmart.com.cdn.cloudflare.net
 
-# > 关键字匹配 (兜底拦截)
+# > 关键字兜底 (防止遗漏新出的动态子域名或活动页)
 DOMAIN-KEYWORD,bitmart
-DOMAIN-KEYWORD,bmx
