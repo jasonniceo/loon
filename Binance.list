@@ -9,6 +9,9 @@ DOMAIN-SUFFIX,binance.net
 DOMAIN-SUFFIX,binance.org
 DOMAIN-SUFFIX,binance.us
 DOMAIN-SUFFIX,binance.vision
+DOMAIN-SUFFIX,servicesbinance.com
+DOMAIN-SUFFIX,static.bscdnweb.com
+DOMAIN-SUFFIX,o529943.ingest.us.sentry.io
 
 # > 币安专属静态资源与活动 H5 托管 CDN
 DOMAIN-SUFFIX,bscdnweb.com
