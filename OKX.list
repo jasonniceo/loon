@@ -1,29 +1,23 @@
-# > OKX 核心域名
+# > OKX 国际主站及常规服务
 DOMAIN-SUFFIX,okx.com
+DOMAIN-SUFFIX,okx.net
+DOMAIN-SUFFIX,okx.org
+DOMAIN-SUFFIX,okx.co
+
+# > 欧易历史及兼容域名 (部分 APP 历史接口和旧版本仍在使用)
 DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,okex.me
-DOMAIN-SUFFIX,okex.org
-DOMAIN-SUFFIX,okcoin.com
+DOMAIN-SUFFIX,okex.net
 
-# > OKX 区块链浏览器及生态
-DOMAIN-SUFFIX,oklink.com
-DOMAIN-SUFFIX,oklink.org
-
-# > OKX 数据、API 与 DNS 支持域名
+# > OKX App 专用、核心 API 与 DNS 调度 (保障移动端连接与推送)
 DOMAIN-SUFFIX,okx-dns.com
 DOMAIN-SUFFIX,okx-dns1.com
-DOMAIN-SUFFIX,okx-dns2.com
-DOMAIN-SUFFIX,okx-dns3.com
-DOMAIN-SUFFIX,okx.com.cdn.cloudflare.net
+DOMAIN-SUFFIX,okx-api.com
+DOMAIN-SUFFIX,okx-pub.com
 
-# > OKX 国内常用访问域名/镜像站 (防 DNS 污染及直连被阻断)
-DOMAIN-SUFFIX,ouyi.tv
-DOMAIN-SUFFIX,ouyic.com
-DOMAIN-SUFFIX,ouyic.xyz
-DOMAIN-SUFFIX,ouyiy.com
-DOMAIN-SUFFIX,ouyiy.cc
+# > OKX 静态资源与 Cdn 节点
+DOMAIN-SUFFIX,okx-assets.com
+DOMAIN-SUFFIX,okx-cdn.com
 
-# > 关键字匹配 (兜底拦截)
-DOMAIN-KEYWORD,okex
+# > 关键字兜底 (防止遗漏新出的动态子域名)
 DOMAIN-KEYWORD,okx
-DOMAIN-KEYWORD,ouyi
+DOMAIN-KEYWORD,okex
