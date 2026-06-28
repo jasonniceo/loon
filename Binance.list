@@ -1,0 +1,47 @@
+# > Binance 国际主站及常规服务
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.cc
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binance.co
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,binance.net
+DOMAIN-SUFFIX,binance.org
+DOMAIN-SUFFIX,binance.us
+DOMAIN-SUFFIX,binance.vision
+
+# > Binance 核心接口与数据流
+DOMAIN-SUFFIX,binanceapi.com
+DOMAIN-SUFFIX,binancecnt.com
+DOMAIN-SUFFIX,binanceru.net
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,saasexch.com
+DOMAIN-SUFFIX,saasexch.info
+
+# > Binance App 专用 (推送、测速、客户端专属网关)
+DOMAIN-SUFFIX,binance.im
+DOMAIN-SUFFIX,binance.ccf
+DOMAIN-SUFFIX,hanqiweb.red
+DOMAIN-SUFFIX,hanqiweb.cn
+DOMAIN-SUFFIX,hanqiweb.net
+DOMAIN-SUFFIX,shyqxxy.com
+DOMAIN-SUFFIX,bnapphz.com
+
+# > 币安中文区相关备用及跳转域名
+DOMAIN-SUFFIX,binancezh.be
+DOMAIN-SUFFIX,binancezh.biz
+DOMAIN-SUFFIX,binancezh.cc
+DOMAIN-SUFFIX,binancezh.co
+DOMAIN-SUFFIX,binancezh.com
+DOMAIN-SUFFIX,binancezh.info
+DOMAIN-SUFFIX,binancezh.net
+DOMAIN-SUFFIX,binancezh.pro
+DOMAIN-SUFFIX,binancezh.top
+
+# > 币安生态 (BSC / 静态资源)
+DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,bep20.com
+DOMAIN-SUFFIX,bscscan.com
+
+# > 关键字兜底 (防止遗漏新出的动态子域名)
+DOMAIN-KEYWORD,binance
