@@ -10,6 +10,9 @@ DOMAIN-SUFFIX,binance.org
 DOMAIN-SUFFIX,binance.us
 DOMAIN-SUFFIX,binance.vision
 
+# > 币安专属静态资源与活动 H5 托管 CDN
+DOMAIN-SUFFIX,bscdnweb.com
+
 # > Binance 核心接口与数据流
 DOMAIN-SUFFIX,binanceapi.com
 DOMAIN-SUFFIX,binancecnt.com
