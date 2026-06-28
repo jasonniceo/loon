@@ -43,5 +43,11 @@ DOMAIN-SUFFIX,bnbstatic.com
 DOMAIN-SUFFIX,bep20.com
 DOMAIN-SUFFIX,bscscan.com
 
+# > 币安可能调用的第三方数据与云服务
+DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN-SUFFIX,sensorsdata.cn
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-KEYWORD,cloudfront
+
 # > 关键字兜底 (防止遗漏新出的动态子域名)
 DOMAIN-KEYWORD,binance
