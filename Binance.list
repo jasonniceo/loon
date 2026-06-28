@@ -1,4 +1,4 @@
-# > Binance 国际主站及常规服务
+# > Binance 核心主站及入口
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.cc
 DOMAIN-SUFFIX,binance.cloud
@@ -9,34 +9,7 @@ DOMAIN-SUFFIX,binance.net
 DOMAIN-SUFFIX,binance.org
 DOMAIN-SUFFIX,binance.us
 DOMAIN-SUFFIX,binance.vision
-DOMAIN-SUFFIX,servicesbinance.com
-DOMAIN-SUFFIX,static.bscdnweb.com
-DOMAIN-SUFFIX,o529943.ingest.us.sentry.io
-DOMAIN-SUFFIX,log.bntrace.com
-DOMAIN-SUFFIX,www.binance.info
-DOMAIN-SUFFIX,servicesbinance.com
-
-# > 币安专属静态资源与活动 H5 托管 CDN
-DOMAIN-SUFFIX,bscdnweb.com
-
-# > Binance 核心接口与数据流
-DOMAIN-SUFFIX,binanceapi.com
-DOMAIN-SUFFIX,binancecnt.com
-DOMAIN-SUFFIX,binanceru.net
-DOMAIN-SUFFIX,bntrace.com
-DOMAIN-SUFFIX,saasexch.com
-DOMAIN-SUFFIX,saasexch.info
-
-# > Binance App 专用 (推送、测速、客户端专属网关)
 DOMAIN-SUFFIX,binance.im
-DOMAIN-SUFFIX,binance.ccf
-DOMAIN-SUFFIX,hanqiweb.red
-DOMAIN-SUFFIX,hanqiweb.cn
-DOMAIN-SUFFIX,hanqiweb.net
-DOMAIN-SUFFIX,shyqxxy.com
-DOMAIN-SUFFIX,bnapphz.com
-
-# > 币安中文区相关备用及跳转域名
 DOMAIN-SUFFIX,binancezh.be
 DOMAIN-SUFFIX,binancezh.biz
 DOMAIN-SUFFIX,binancezh.cc
@@ -47,16 +20,46 @@ DOMAIN-SUFFIX,binancezh.net
 DOMAIN-SUFFIX,binancezh.pro
 DOMAIN-SUFFIX,binancezh.top
 
-# > 币安生态 (BSC / 静态资源)
+# > Binance 核心接口、数据流及业务服务
+DOMAIN-SUFFIX,binanceapi.com
+DOMAIN-SUFFIX,binancecnt.com
+DOMAIN-SUFFIX,binanceru.net
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,log.bntrace.com
+DOMAIN-SUFFIX,saasexch.com
+DOMAIN-SUFFIX,saasexch.info
+DOMAIN-SUFFIX,servicesbinance.com
+
+# > 币安专属静态资源、App 专用及 CDN
+DOMAIN-SUFFIX,bscdnweb.com
 DOMAIN-SUFFIX,bnbstatic.com
 DOMAIN-SUFFIX,bep20.com
 DOMAIN-SUFFIX,bscscan.com
+DOMAIN-SUFFIX,app-analytics-services.com
+DOMAIN-SUFFIX,bybdc6.com
+DOMAIN-SUFFIX,bnapphz.com
+DOMAIN-SUFFIX,hanqiweb.red
+DOMAIN-SUFFIX,hanqiweb.cn
+DOMAIN-SUFFIX,hanqiweb.net
+DOMAIN-SUFFIX,shyqxxy.com
 
-# > 币安可能调用的第三方数据与云服务
+# > 第三方辅助服务 (Sentry/Cloudfront/Analytics)
+DOMAIN-SUFFIX,o529943.ingest.us.sentry.io
+DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,appsflyersdk.com
 DOMAIN-SUFFIX,sensorsdata.cn
-DOMAIN-SUFFIX,sentry.io
 DOMAIN-KEYWORD,cloudfront
 
 # > 关键字兜底 (防止遗漏新出的动态子域名)
 DOMAIN-KEYWORD,binance
+
+# > IP 规则
+IP-CIDR,39.108.55.122,no-resolve
+IP-CIDR,39.108.179.41,no-resolve
+IP-CIDR,47.106.116.105,no-resolve
+IP-CIDR,47.106.125.50,no-resolve
+IP-CIDR,52.198.187.114,no-resolve
+IP-CIDR,106.53.165.44,no-resolve
+IP-CIDR,114.132.46.122,no-resolve
+IP-CIDR,119.23.63.226,no-resolve
+IP-CIDR,120.77.173.49,no-resolve
