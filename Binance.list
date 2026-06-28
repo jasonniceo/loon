@@ -63,3 +63,12 @@ IP-CIDR,106.53.165.44,no-resolve
 IP-CIDR,114.132.46.122,no-resolve
 IP-CIDR,119.23.63.226,no-resolve
 IP-CIDR,120.77.173.49,no-resolve
+
+# > 强制代理的国内云服务商 ASN (根据需要补充)
+IP-ASN,37963,no-resolve
+IP-ASN,45102,no-resolve
+IP-ASN,24400,no-resolve
+IP-ASN,132203,no-resolve
+IP-ASN,45090,no-resolve
+IP-ASN,136907,no-resolve
+IP-ASN,55933,no-resolve
