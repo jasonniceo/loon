@@ -1,34 +1,21 @@
-# > Bybit 核心域名
+# > Bybit 国际主站及常规服务
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybitglobal.com
-DOMAIN-SUFFIX,bybit.biz
+DOMAIN-SUFFIX,bybit.info
+DOMAIN-SUFFIX,bybit.co
+DOMAIN-SUFFIX,bybit.nl
+DOMAIN-SUFFIX,bybit.hk
+DOMAIN-SUFFIX,bybit.net
+DOMAIN-SUFFIX,bybit.org
+
+# > Bybit App 专用及核心 API 数据流 (App 行情与交易核心)
 DOMAIN-SUFFIX,bytick.com
-DOMAIN-SUFFIX,bycsi.com
-DOMAIN-SUFFIX,byapis.com
-DOMAIN-SUFFIX,bycbe.com
-DOMAIN-SUFFIX,bymj.io
-DOMAIN-SUFFIX,byabcde.com
-DOMAIN-SUFFIX,byapps.net
-DOMAIN-SUFFIX,byd3c3.com
-DOMAIN-SUFFIX,bybdc6.com
-DOMAIN-SUFFIX,bybit-aws.com
-DOMAIN-SUFFIX,byffbb.com
 
-# > Bybit 相关数据与服务域名
-DOMAIN,monitor-frontend-collector.a.bybit-aws.com
-DOMAIN,bybit-exchange.github.io
-DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
-DOMAIN-SUFFIX,ffe390afd658c19dcbf707e0597b846d.de
+# > Bybit 附属及静态资源
+DOMAIN-SUFFIX,bybitad.com
+DOMAIN-SUFFIX,bybit-affiliates.com
+DOMAIN-SUFFIX,bybit-exchange.github.io
 
-# > Bybit 关键字匹配 (作为补充防御)
+# > 关键字兜底 (防止遗漏新出的动态子域名)
 DOMAIN-KEYWORD,bybit
-
-# > 规避部分直连引发风控的 IP 规则 
-# (保留了 no-resolve 以避免 Loon 发起不必要的本地 DNS 解析请求)
-IP-CIDR,13.32.121.6/32,no-resolve
-IP-CIDR,43.133.238.145/32,no-resolve
-IP-CIDR,13.33.187.108/32,no-resolve
-IP-CIDR,150.109.230.182/32,no-resolve
-IP-CIDR,142.251.215.234/32,no-resolve
-IP-CIDR,43.133.241.84/32,no-resolve
-IP-CIDR,3.160.150.37/32,no-resolve
+DOMAIN-KEYWORD,bytick
