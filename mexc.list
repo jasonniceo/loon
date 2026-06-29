@@ -1,0 +1,21 @@
+# ------------------
+#  MEXC (抹茶交易所) 分流规则
+# ------------------
+# 官方主站与多语言域名
+DOMAIN-SUFFIX,mexc.com
+DOMAIN-SUFFIX,mexc.io
+DOMAIN-SUFFIX,mexc.link
+DOMAIN-SUFFIX,mexclife.com
+
+# API、Websocket 与开发者文档
+DOMAIN,mexcdevelop.github.io
+DOMAIN-KEYWORD,mexc-api
+
+# 全球内容分发与静态资源加速
+DOMAIN-SUFFIX,mexc.com.cdn.cloudflare.net
+DOMAIN-KEYWORD,mexc-static
+DOMAIN-KEYWORD,mxcip
+
+# APP 内部特定高频业务及部分旧域名保留
+DOMAIN-SUFFIX,mxc.com
+DOMAIN-SUFFIX,mxc.ai
