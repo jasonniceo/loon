@@ -35,8 +35,6 @@ DOMAIN-SUFFIX,bscdnweb.com
 DOMAIN-SUFFIX,bnbstatic.com
 DOMAIN-SUFFIX,bep20.com
 DOMAIN-SUFFIX,bscscan.com
-DOMAIN-SUFFIX,app-analytics-services.com
-DOMAIN-SUFFIX,bybdc6.com
 DOMAIN-SUFFIX,bnapphz.com
 DOMAIN-SUFFIX,hanqiweb.red
 DOMAIN-SUFFIX,hanqiweb.cn
@@ -53,7 +51,7 @@ DOMAIN-KEYWORD,cloudfront
 # > 关键字兜底 (防止遗漏新出的动态子域名)
 DOMAIN-KEYWORD,binance
 
-# > 强制代理的国内云服务商 ASN (根据需要补充)
+# > 强制代理的国内云服务商 ASN
 IP-ASN,37963,no-resolve
 IP-ASN,45102,no-resolve
 IP-ASN,24400,no-resolve
