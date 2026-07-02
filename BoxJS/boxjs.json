@@ -201,14 +201,6 @@
         "<a href=\"/app/gistBackup\" style=\"display: block;width: 100%;font-size: 20px;text-align: center;background: #1890ff;color: #fff;border-radius: 4px;overflow: hidden;text-decoration: none;padding: 5px;box-sizing: border-box;margin:10px 0\">Gist 配置</a>",
         "<a href=\"/app/GistBackupBlackApp\" style=\"display: block;width: 100%;font-size: 20px;text-align: center;background: #1890ff;color: #fff;border-radius: 4px;overflow: hidden;text-decoration: none;padding: 5px;box-sizing: border-box;\">Gist 数据白名单</a>"
       ]
-            }
-          ]
-        }
-      ],
-      "icons": [
-        "https://raw.githubusercontent.com/dompling/Script/master/icon/setTime.png",
-        "https://raw.githubusercontent.com/dompling/Script/master/icon/setTime.png"
-      ]
     }
   ]
 }
