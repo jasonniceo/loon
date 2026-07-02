@@ -201,6 +201,135 @@
         "<a href=\"/app/gistBackup\" style=\"display: block;width: 100%;font-size: 20px;text-align: center;background: #1890ff;color: #fff;border-radius: 4px;overflow: hidden;text-decoration: none;padding: 5px;box-sizing: border-box;margin:10px 0\">Gist 配置</a>",
         "<a href=\"/app/GistBackupBlackApp\" style=\"display: block;width: 100%;font-size: 20px;text-align: center;background: #1890ff;color: #fff;border-radius: 4px;overflow: hidden;text-decoration: none;padding: 5px;box-sizing: border-box;\">Gist 数据白名单</a>"
       ]
+    },
+    {
+      "id": "xream.gist",
+      "name": "Gist 备份",
+      "descs_html": [
+        "原脚本由 <a href='https://github.com/dompling' target='_blank'>@dompling</a> 提供, 感谢!",
+        "本脚本涉及大量对 BoxJs 以及原脚本的复制粘贴 侵删",
+        "<br />",
+        "<b>Token</b> 获取方式:",
+        "<span style='margin-left: 40px'>头像菜单 -></span>",
+        "<span style='margin-left: 40px'>Settings -></span>",
+        "<span style='margin-left: 40px'>Developer settings -></span>",
+        "<span style='margin-left: 40px'>Personal access tokens -></span>",
+        "<span style='margin-left: 40px'>Generate new token -></span>",
+        "<span style='margin-left: 40px'>在里面找到 gist 勾选提交</span>",
+        "<a href=\"https://github.com/xream/scripts/tree/main/surge/modules/gist\">查看文档</a>",
+        "<a href=\"https://github.com/settings/tokens\">GitHub Personal access tokens 页面</a>",
+        "<a onClick=\"window.location.reload(true);\">刷新</a>"
+      ],
+      "keys": [
+        "@xream.gist.username",
+        "@xream.gist.token",
+        "@xream.gist.desc",
+        "@xream.gist.saveKey",
+        "@xream.gist.testFlightAccountLocalId",
+        "@xream.gist.testFlightAccountOnly",
+        "@xream.gist.testFlightAccountOnlyForBackup",
+        "@xream.gist.keys"
+      ],
+      "author": "@xream",
+      "repo": "https://github.com/xream/scripts/tree/main/surge/modules/gist",
+      "scripts": [
+        {
+          "name": "备份",
+          "script": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/backup.js"
+        },
+        {
+          "name": "备份(为防止悲剧发生)",
+          "script": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/backup.js"
+        },
+        {
+          "name": "备份(跟其他操作多隔开几行)",
+          "script": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/backup.js"
+        },
+        {
+          "name": "恢复(谨慎操作)",
+          "script": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/restore.js"
+        },
+        {
+          "name": "恢复(为防止悲剧发生)",
+          "script": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/restore.js"
+        },
+        {
+          "name": "恢复(跟其他操作多隔开几行)",
+          "script": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/restore.js"
+        },
+        {
+          "name": "删除(谨慎操作)",
+          "script": "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/delete.js"
+        }
+      ],
+      "settings": [
+        {
+          "id": "@xream.gist.username",
+          "name": "用户名",
+          "val": "",
+          "type": "text",
+          "desc": "你的个人页面是 https://github.com/xream 那么 xream 就是你的用户名"
+        },
+        {
+          "id": "@xream.gist.token",
+          "name": "Personal access token",
+          "placeholder": "",
+          "val": "",
+          "type": "text",
+          "desc": "获取方式见👆🏻"
+        },
+        {
+          "id": "@xream.gist.desc",
+          "name": "Gist 描述",
+          "placeholder": "",
+          "val": "Auto Generated BoxJs Global Backup",
+          "type": "text",
+          "desc": "默认为 Auto Generated BoxJs Global Backup"
+        },
+        {
+          "id": "@xream.gist.saveKey",
+          "name": "Gist 文件名",
+          "placeholder": "",
+          "val": "backup.json",
+          "type": "text",
+          "desc": "默认为 backup.json"
+        },
+        {
+          "id": "@xream.gist.testFlightAccountLocalId",
+          "name": "合并更新 TestFlight 账户管理脚本的数据时 要保留的本地 ID(s)",
+          "placeholder": "",
+          "val": "",
+          "type": "text",
+          "desc": "多个 ID 逗号分隔"
+        },
+        {
+          "id": "@xream.gist.testFlightAccountOnly",
+          "name": "仅恢复 TestFlight 账户管理脚本的数据",
+          "val": false,
+          "type": "boolean",
+          "desc": "默认禁用. 启用后只会恢复 TestFlight 账户管理脚本的数据"
+        },
+        {
+          "id": "@xream.gist.testFlightAccountOnlyForBackup",
+          "name": "仅备份 TestFlight 账户管理脚本的数据",
+          "val": false,
+          "type": "boolean",
+          "desc": "默认禁用. 启用后只会备份 TestFlight 账户管理脚本的数据"
+        },
+        {
+          "id": "@xream.gist.keys",
+          "name": "需要额外备份的持久化缓存的 key(s)",
+          "placeholder": "",
+          "val": "",
+          "type": "textarea",
+          "persistentHint": true,
+          "desc": "多个 key 逗号分隔"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/asset/icon.png",
+        "https://raw.githubusercontent.com/xream/scripts/main/surge/modules/gist/asset/icon.png"
+      ]
     }
   ]
 }
