@@ -1,0 +1,211 @@
+{
+  "id": "dompling.app.sub",
+  "name": "Boxjs备份",
+  "author": "@jasonnice",
+  "icon": "https://avatars3.githubusercontent.com/u/23498579?s=460&u=1e87605e4abc4e6ecf3edd8b1d730227f54db4d4&v=4",
+  "repo": "https://github.com/dompling/Script",
+  "apps": [
+    {
+      "id": "gistBackup",
+      "name": "Gist备份",
+      "keys": [
+        "@gist.token",
+        "@gist.username",
+        "@gist.split",
+        "@gist.revision_options",
+        "@gist.backup_type",
+        "@gist.backup_black_apps",
+        "@gist.backup_white_apps"
+      ],
+      "author": "@dompling",
+      "icons": [
+        "https://raw.githubusercontent.com/Former-Years/icon/master/github-bf.png",
+        "https://raw.githubusercontent.com/Former-Years/icon/master/github-bf.png"
+      ],
+      "descs_html": [
+        "<h4>Token的获取方式</h4>",
+        "<ol>头像菜单 -></ol>",
+        "<ol>Settings -></ol>",
+        "<ol>Developer settings -></ol>",
+        "<ol>Personal access tokens -></ol>",
+        "<ol>Generate new token -></ol>",
+        "<ol>在里面找到 gist 勾选提交</ol>",
+
+        "<h4>Gist Revision Id</h4>",
+        "<ol>打开Gist项目</ol>",
+        "<ol>默认为Code，选择Revisions</ol>",
+        "<ol>找到需要恢复的版本文件</ol>",
+        "<ol>点击右上角【...】>【View file】</ol>",
+        "<ol>浏览器地址最后一串为 RevisionId</ol>",
+        "<a href=\"/app/GistBackupBlackApp\" style=\"display: block;width: 100%;font-size: 20px;text-align: center;background: #1890ff;color: #fff;border-radius: 4px;overflow: hidden;text-decoration: none;padding: 5px;box-sizing: border-box;margin:10px 0\">Gist 数据黑名单</a>",
+        "<a href=\"/app/GistBackupWhiteApp\" style=\"display: block;width: 100%;font-size: 20px;text-align: center;background: #1890ff;color: #fff;border-radius: 4px;overflow: hidden;text-decoration: none;padding: 5px;box-sizing: border-box;\">Gist 数据白名单</a>"
+      ],
+      "scripts": [
+        {
+          "name": "备份 Gist",
+          "script": "https://raw.githubusercontent.com/dompling/Script/master/gist/backup.js"
+        },
+        {
+          "name": "恢复 Gist",
+          "script": "https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js"
+        },
+        {
+          "name": "更新历史版本",
+          "script": "https://raw.githubusercontent.com/dompling/Script/master/gist/commit.js"
+        }
+      ],
+      "settings": [
+        {
+          "id": "@gist.split",
+          "name": "用户数据分段",
+          "val": null,
+          "type": "number",
+          "placeholder": "用户数据过大时，请进行拆分防止内存警告⚠️",
+          "desc": "值为数字，拆分段数比如 2 就拆分成两个 datas."
+        },
+        {
+          "id": "@gist.revision_id",
+          "type": "modalSelects",
+          "name": "历史版本RevisionId",
+          "desc": "不填写时，默认获取最新，恢复后会自动清空。选择无内容时，请运行上方更新历史版本",
+          "items": "@gist.revision_options"
+        },
+        {
+          "id": "@gist.backup_type",
+          "name": "备份/恢复内容",
+          "val": "usercfgs,datas,sessions,curSessions,backups,appSubCaches",
+          "type": "checkboxes",
+          "items": [
+            {
+              "key": "usercfgs",
+              "label": "用户偏好"
+            },
+            {
+              "key": "datas",
+              "label": "用户数据"
+            },
+            {
+              "key": "sessions",
+              "label": "应用会话"
+            },
+            {
+              "key": "curSessions",
+              "label": "当前会话"
+            },
+            {
+              "key": "backups",
+              "label": "备份索引"
+            },
+            {
+              "key": "appSubCaches",
+              "label": "应用订阅缓存"
+            }
+          ]
+        },
+        {
+          "id": "@gist.username",
+          "name": "用户名",
+          "val": null,
+          "type": "text",
+          "placeholder": "github 用户名",
+          "desc": "必填"
+        },
+        {
+          "id": "@gist.token",
+          "name": "Personal access tokens",
+          "val": null,
+          "type": "text",
+          "placeholder": "github personal access tokens",
+          "desc": "必填"
+        }
+      ]
+    },
+    {
+      "id": "GistBackupBlackApp",
+      "name": "数据黑名",
+      "author": "@dompling",
+      "icons": [
+        "https://raw.githubusercontent.com/dompling/Script/master/icon/github-black.jpg",
+        "https://raw.githubusercontent.com/dompling/Script/master/icon/github-black.jpg"
+      ],
+      "keys": ["@gist.backup_black_apps"],
+      "settings": [
+        {
+          "id": "@gist.backup_black_apps",
+          "name": "请运行【刷新APP】,刷新后再刷新当前页面",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "请运行【刷新APP】",
+          "desc": "除黑名单相关 APP 的 Key 到用户数据，无选择内容时，请运行【刷新APP】"
+        }
+      ],
+      "scripts": [
+        {
+          "name": "备份 Gist (除黑名单)",
+          "script": "https://raw.githubusercontent.com/dompling/Script/master/gist/backup.js"
+        },
+        {
+          "name": "恢复 Gist (除黑名单)",
+          "script": "https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js"
+        },
+        {
+          "name": "刷新APP",
+          "script": "https://raw.githubusercontent.com/dompling/Script/master/gist/refreshApps.js"
+        }
+      ],
+      "descs_html": [
+        "<h4>【同步提示】</h4>",
+        "<p style=\"color:red\">白名单中，仅备份包含的 app(优先于黑名单)</p>",
+        "黑名单中包含的 app 会跳过备份和恢复",
+        "<a href=\"/app/gistBackup\" style=\"display: block;width: 100%;font-size: 20px;text-align: center;background: #1890ff;color: #fff;border-radius: 4px;overflow: hidden;text-decoration: none;padding: 5px;box-sizing: border-box;margin:10px 0\">Gist 配置</a>",
+        "<a href=\"/app/GistBackupWhiteApp\" style=\"display: block;width: 100%;font-size: 20px;text-align: center;background: #1890ff;color: #fff;border-radius: 4px;overflow: hidden;text-decoration: none;padding: 5px;box-sizing: border-box;\">Gist 数据白名单</a>"
+      ]
+    },
+    {
+      "id": "GistBackupWhiteApp",
+      "name": "数据白名",
+      "author": "@dompling",
+      "icons": [
+        "https://raw.githubusercontent.com/dompling/Script/master/icon/github-white.jpg",
+        "https://raw.githubusercontent.com/dompling/Script/master/icon/github-white.jpg"
+      ],
+      "keys": ["@gist.backup_white_apps"],
+      "settings": [
+        {
+          "id": "@gist.backup_white_apps",
+          "name": "请运行【刷新APP】,刷新后再刷新当前页面",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "请运行【刷新APP】",
+          "desc": "白名单相关 APP 的 Key 到用户数据，无选择内容时，请运行【刷新APP】"
+        }
+      ],
+      "scripts": [
+        {
+          "name": "备份 Gist (仅备份白名单)",
+          "script": "https://raw.githubusercontent.com/dompling/Script/master/gist/backup.js"
+        },
+        {
+          "name": "恢复 Gist (仅恢复白名单)",
+          "script": "https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js"
+        },
+        {
+          "name": "刷新APP",
+          "script": "https://raw.githubusercontent.com/dompling/Script/master/gist/refreshApps.js"
+        }
+      ],
+      "descs_html": [
+        "<h4>【同步提示】</h4>",
+        "<p style=\"color:red\">白名单中，仅备份包含的 app(优先于黑名单)</p>",
+        "黑名单中包含的 app 会跳过备份和恢复",
+        "<a href=\"/app/gistBackup\" style=\"display: block;width: 100%;font-size: 20px;text-align: center;background: #1890ff;color: #fff;border-radius: 4px;overflow: hidden;text-decoration: none;padding: 5px;box-sizing: border-box;margin:10px 0\">Gist 配置</a>",
+        "<a href=\"/app/GistBackupBlackApp\" style=\"display: block;width: 100%;font-size: 20px;text-align: center;background: #1890ff;color: #fff;border-radius: 4px;overflow: hidden;text-decoration: none;padding: 5px;box-sizing: border-box;\">Gist 数据白名单</a>"
+      ]
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/dompling/Script/master/icon/setTime.png",
+        "https://raw.githubusercontent.com/dompling/Script/master/icon/setTime.png"
+      ]
+    }
+  ]
+}
