@@ -1,7 +1,7 @@
 {
   "id": "dompling.app.sub",
-  "name": "Boxjs备份",
-  "author": "@jasonnice",
+  "name": "DomplingYaYa 应用订阅",
+  "author": "@DomplingYaYa",
   "icon": "https://avatars3.githubusercontent.com/u/23498579?s=460&u=1e87605e4abc4e6ecf3edd8b1d730227f54db4d4&v=4",
   "repo": "https://github.com/dompling/Script",
   "apps": [
@@ -30,6 +30,7 @@
         "<ol>Personal access tokens -></ol>",
         "<ol>Generate new token -></ol>",
         "<ol>在里面找到 gist 勾选提交</ol>",
+
         "<h4>Gist Revision Id</h4>",
         "<ol>打开Gist项目</ol>",
         "<ol>默认为Code，选择Revisions</ol>",
@@ -127,9 +128,7 @@
         "https://raw.githubusercontent.com/dompling/Script/master/icon/github-black.jpg",
         "https://raw.githubusercontent.com/dompling/Script/master/icon/github-black.jpg"
       ],
-      "keys": [
-        "@gist.backup_black_apps"
-      ],
+      "keys": ["@gist.backup_black_apps"],
       "settings": [
         {
           "id": "@gist.backup_black_apps",
@@ -170,9 +169,7 @@
         "https://raw.githubusercontent.com/dompling/Script/master/icon/github-white.jpg",
         "https://raw.githubusercontent.com/dompling/Script/master/icon/github-white.jpg"
       ],
-      "keys": [
-        "@gist.backup_white_apps"
-      ],
+      "keys": ["@gist.backup_white_apps"],
       "settings": [
         {
           "id": "@gist.backup_white_apps",
@@ -203,6 +200,14 @@
         "黑名单中包含的 app 会跳过备份和恢复",
         "<a href=\"/app/gistBackup\" style=\"display: block;width: 100%;font-size: 20px;text-align: center;background: #1890ff;color: #fff;border-radius: 4px;overflow: hidden;text-decoration: none;padding: 5px;box-sizing: border-box;margin:10px 0\">Gist 配置</a>",
         "<a href=\"/app/GistBackupBlackApp\" style=\"display: block;width: 100%;font-size: 20px;text-align: center;background: #1890ff;color: #fff;border-radius: 4px;overflow: hidden;text-decoration: none;padding: 5px;box-sizing: border-box;\">Gist 数据白名单</a>"
+      ]
+            }
+          ]
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/dompling/Script/master/icon/setTime.png",
+        "https://raw.githubusercontent.com/dompling/Script/master/icon/setTime.png"
       ]
     }
   ]
