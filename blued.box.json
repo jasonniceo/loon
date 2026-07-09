@@ -6,28 +6,6 @@
   "repo": "https://t.me/+2T-oJk2FFts4NDZl",
   "apps": [
     {
-      "id": "ericPassword",
-      "name": "Eric-密码验证",
-      "descs_html": ["<a target='_blank' href='https://t.me/+2T-oJk2FFts4NDZl'>密码获取链接</a>"],
-      "keys": ["EricPassword"],
-      "settings": [
-        {
-          "id": "EricPassword",
-          "name": "脚本密码",
-          "val": "",
-          "type": "text",
-          "desc": "请输入脚本密码"
-        }
-      ],
-      "author": "@Eric",
-      "script": "https://gist.githubusercontent.com/jasonniceo/e21a8ceab959a34686266d99edc7cf35/raw/blued-location.js,https://gist.githubusercontent.com/jasonniceo/e21a8ceab959a34686266d99edc7cf35/raw/blued-vip.js,https://gist.githubusercontent.com/jasonniceo/e21a8ceab959a34686266d99edc7cf35/raw/blued-pic.js,https://gist.githubusercontent.com/jasonniceo/15e43d3fd2775f7780a0c51a7bae98e4/raw/Finka_locatiion.js",
-      "repo": "https://t.me/Mr_Alex",
-      "icons": [
-        "https://raw.githubusercontent.com/Alex0510/Eric/master/Icons/Blued.png",
-        "https://raw.githubusercontent.com/Alex0510/Eric/master/Icons/Blued.png"
-      ]
-    },
-    {
       "id": "bluedpic",
       "name": "Eric-pic闪照捕获",
       "descs_html": [
