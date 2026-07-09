@@ -13,7 +13,7 @@ arg4 = switch,false,tag=翻咔查看图片
 arg5 = switch,false,tag=翻咔位置
 
 [Script]
-http-request ^https:\/\/(burn-chatfiles|chatfiles|argo)\.(blued|bldimg)\.(cn|com)\/(((chatfiles|ingfiles|burn_chatfiles\/(videos|users))\/.*(mp4|jpg|(jpg|png))|blued\/qiniu\/chat)|.*).* script-path=https://gist.githubusercontent.com/jasonniceo/0a81ac425cb7e95683b0c22e35c07aaa/raw/6d4bc17a37c5a1bde6aa240cf9c6589abf0d0b75/blued-pic.js, enable = {arg1}, tag=blued_pic
+http-request ^https:\/\/(burn-chatfiles|chatfiles|argo)\.(blued|bldimg)\.(cn|com)\/(((chatfiles|ingfiles|burn_chatfiles\/(videos|users))\/.*(mp4|jpg|(jpg|png))|blued\/qiniu\/chat)|.*).* script-path=https://gist.githubusercontent.com/jasonniceo/0a81ac425cb7e95683b0c22e35c07aaa/raw/blued-pic.js, enable = {arg1}, tag=blued_pic
 
 http-response ^https:\/\/.*\/users.*(setting|is_living=false|more/ios|flash|shadow|fair/exchange/count|\?aaid=|basic|map|\?column=) script-path=https://gist.githubusercontent.com/jasonniceo/0a81ac425cb7e95683b0c22e35c07aaa/raw/6d4bc17a37c5a1bde6aa240cf9c6589abf0d0b75/blued-vip.js, requires-body=true, enable = {arg2}, tag=blued_VIP
 
