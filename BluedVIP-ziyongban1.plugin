@@ -15,13 +15,13 @@ arg5 = switch,false,tag=翻咔位置
 [Script]
 http-request ^https:\/\/(burn-chatfiles|chatfiles|argo)\.(blued|bldimg)\.(cn|com)\/(((chatfiles|ingfiles|burn_chatfiles\/(videos|users))\/.*(mp4|jpg|(jpg|png))|blued\/qiniu\/chat)|.*).* script-path=https://gist.githubusercontent.com/jasonniceo/0a81ac425cb7e95683b0c22e35c07aaa/raw/blued-pic.js, enable = {arg1}, tag=blued_pic
 
-http-response ^https:\/\/.*\/users.*(setting|is_living=false|more/ios|flash|shadow|fair/exchange/count|\?aaid=|basic|map|\?column=) script-path=https://gist.githubusercontent.com/jasonniceo/0a81ac425cb7e95683b0c22e35c07aaa/raw/6d4bc17a37c5a1bde6aa240cf9c6589abf0d0b75/blued-vip.js, requires-body=true, enable = {arg2}, tag=blued_VIP
+http-response ^https:\/\/.*\/users.*(setting|is_living=false|more/ios|flash|shadow|fair/exchange/count|\?aaid=|basic|map|\?column=) script-path=https://gist.githubusercontent.com/jasonniceo/0a81ac425cb7e95683b0c22e35c07aaa/blued-vip.js, requires-body=true, enable = {arg2}, tag=blued_VIP
 
-http-request https://((social|argo).blued.cn|\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b)/(users.*extra_info=|ticktocks/users|groups/nearby|users/selection|ticktocks/popups|ticktocks/info|ticktocks/banner).* script-path=https://gist.githubusercontent.com/jasonniceo/0a81ac425cb7e95683b0c22e35c07aaa/raw/6d4bc17a37c5a1bde6aa240cf9c6589abf0d0b75/blued-location.js, enable = {arg3}, tag=blued_location
+http-request https://((social|argo).blued.cn|\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b)/(users.*extra_info=|ticktocks/users|groups/nearby|users/selection|ticktocks/popups|ticktocks/info|ticktocks/banner).* script-path=https://gist.githubusercontent.com/jasonniceo/0a81ac425cb7e95683b0c22e35c07aaa/raw/blued-location.js, enable = {arg3}, tag=blued_location
 
-http-response https://api.finka.cn/vas/nearby/v2 script-path=https://gist.githubusercontent.com/jasonniceo/15e43d3fd2775f7780a0c51a7bae98e4/raw/091329acf1ea5657622ede28cf347178cc44406c/Finka_pic.js, requires-body=true, enable = {arg4}, tag=Finka_pic
+http-response https://api.finka.cn/vas/nearby/v2 script-path=https://gist.githubusercontent.com/jasonniceo/15e43d3fd2775f7780a0c51a7bae98e4/raw/Finka_pic.js, requires-body=true, enable = {arg4}, tag=Finka_pic
 
-http-request https://(gethornet.com|api.finka.cn|api.sqaces.com|api.theorangemeetingplace.com).* script-path=https://gist.githubusercontent.com/jasonniceo/15e43d3fd2775f7780a0c51a7bae98e4/raw/091329acf1ea5657622ede28cf347178cc44406c/Finka_locatiion.js, requires-body=true, enable = {arg5}, tag=Finka_location
+http-request https://(gethornet.com|api.finka.cn|api.sqaces.com|api.theorangemeetingplace.com).* script-path=https://gist.githubusercontent.com/jasonniceo/15e43d3fd2775f7780a0c51a7bae98e4/raw/Finka_locatiion.js, requires-body=true, enable = {arg5}, tag=Finka_location
 
 [MITM]
 hostname = api.finka.cn, gethornet.com, api.theorangemeetingplace.com, api.sqaces.com, social.blued.cn, argo.blued.cn, *.bldimg.com, ulogs.umengcloud.com, 220.249.135.81, 182.91.254.69, 61.182.143.92, 110.242.21.49, 123.126.74.232, 60.5.255.204, 125.38.212.83, 240.0.0.25
