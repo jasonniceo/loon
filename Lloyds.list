@@ -1,0 +1,15 @@
+# > Lloyds Bank (英国劳埃德银行) 完整规则集
+
+# 1. 核心主域名与个人网银
+DOMAIN-SUFFIX,lloydsbank.com
+DOMAIN-SUFFIX,lloydsbank.co.uk
+
+# 2. 劳埃德银行集团（企业、通用支持域名）
+DOMAIN-SUFFIX,lloydsbankinggroup.com
+
+# 3. 集团底层基础设施与共享 API（极易被忽略的防风控拦截点）
+DOMAIN-SUFFIX,lbg.co.uk
+
+# 4. 关键字兜底
+DOMAIN-KEYWORD,lloydsbank
+DOMAIN-KEYWORD,lloydsbanking
