@@ -1,0 +1,13 @@
+# > Monzo (英国) 完整规则集
+
+# 1. 核心主域名与 API (涵盖网银、App接口、静态资源)
+DOMAIN-SUFFIX,monzo.com
+
+# 2. 个人转账与支付链接 (类似 PayPal.me)
+DOMAIN-SUFFIX,monzo.me
+
+# 3. 历史遗留域名 (Monzo 早期名为 Mondo，部分老业务或防伪跳转仍可能涉及)
+DOMAIN-SUFFIX,mondo.co.uk
+
+# 4. 关键字兜底
+DOMAIN-KEYWORD,monzo
