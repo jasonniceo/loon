@@ -1,0 +1,25 @@
+# > Kraken (海妖) 完整规则集
+
+# 1. 核心交易、账户与 API 域名
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,kraken.io
+DOMAIN-SUFFIX,kraken.net
+
+# 2. 官方母公司及合规域名
+DOMAIN-SUFFIX,payward.com
+DOMAIN-SUFFIX,payward.asia
+
+# 3. K线图表与行情服务 (Cryptowatch)
+DOMAIN-SUFFIX,cryptowat.ch
+DOMAIN-SUFFIX,cryptowatch.com
+DOMAIN-SUFFIX,cryptowatch.de
+DOMAIN-SUFFIX,cwapi.ch
+
+# 4. 静态资源、邮件分发与客服支持
+DOMAIN-SUFFIX,kraken.zendesk.com
+DOMAIN-SUFFIX,krakencdn.com
+DOMAIN-SUFFIX,mktoresp.com
+
+# 5. 关键字兜底
+DOMAIN-KEYWORD,kraken
+DOMAIN-KEYWORD,payward
