@@ -1,9 +1,12 @@
+# Coinbase Ruleset for Loon
+# Alias: Coinbase
+
 # > Coinbase Main Domains
 DOMAIN-SUFFIX,coinbase.com
 DOMAIN-SUFFIX,coinbase.org
 DOMAIN-SUFFIX,coinbasecloud.dev
 
-# > Coinbase App & Web Services
+# > Coinbase App & Web API / Services
 DOMAIN,api.coinbase.com
 DOMAIN,prime.coinbase.com
 DOMAIN,pro.coinbase.com
@@ -13,15 +16,15 @@ DOMAIN,international.coinbase.com
 DOMAIN,wallet.coinbase.com
 DOMAIN,pay.coinbase.com
 
-# > Developer Platform & Base Ecosystem
+# > Developer Platform & Ecosystem
 DOMAIN-SUFFIX,base.org
 DOMAIN-SUFFIX,cdp.coinbase.com
 
-# > CDN & Static Assets
+# > Static Assets & CDN
 DOMAIN-SUFFIX,coinbase-assets.com
 DOMAIN-SUFFIX,cbstatic.net
 
-# > Analytics, Websockets & Infrastructure
+# > Websockets & Analytics
 DOMAIN,ws.coinbase.com
 DOMAIN,ws-feed.coinbase.com
 DOMAIN,ws-feed.pro.coinbase.com
