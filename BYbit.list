@@ -1,3 +1,6 @@
+# Coinbase Ruleset for Loon
+# Alias: Bybit
+
 # > Bybit 国际主站及常规服务
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybitglobal.com
