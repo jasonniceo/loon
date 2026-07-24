@@ -1,0 +1,15 @@
+# ==========================================
+# Yonder 分流规则集 (Loon 专用)
+# 包含 Web 端与客户端 (App)
+# ==========================================
+
+# > User-Agent 匹配 (精准捕获客户端 App 流量)
+USER-AGENT,Yonder*
+USER-AGENT,*yonder*
+
+# > 域名后缀匹配 (覆盖网页端、API 以及所有子域名)
+DOMAIN-SUFFIX,yonder.com
+DOMAIN-SUFFIX,yondercard.com
+
+# > 域名关键字匹配 (兜底捕获包含 yonder 的其他周边流量)
+DOMAIN-KEYWORD,yonder
