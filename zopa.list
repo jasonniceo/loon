@@ -1,0 +1,14 @@
+# ==========================================
+# Zopa 分流规则集 (Loon 专用)
+# ==========================================
+
+# > User-Agent 匹配 (精准捕获客户端 App 流量)
+USER-AGENT,Zopa*
+USER-AGENT,*zopa*
+
+# > 域名后缀匹配 (覆盖网页端、API 以及所有子域名)
+DOMAIN-SUFFIX,zopa.com
+DOMAIN-SUFFIX,zopabank.com
+
+# > 域名关键字匹配 (兜底捕获包含 zopa 的其他周边流量)
+DOMAIN-KEYWORD,zopa
