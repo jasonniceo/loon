@@ -1,0 +1,49 @@
+# NAME: ByteDance_CN
+# DESC: 字节跳动国内全系产品分流，已剔除海外业务，并整合了zjcdn等分发域名。
+
+# --- User-Agent 匹配 ---
+USER-AGENT,Aweme*
+USER-AGENT,Toutiao*
+USER-AGENT,NewsArticle*
+USER-AGENT,ByteDance*
+USER-AGENT,JianYing*
+USER-AGENT,Feishu*
+
+# --- 核心底层与通用域名 ---
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,bytedance.net
+DOMAIN-SUFFIX,bytednsdoc.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN-SUFFIX,bytegoofy.com
+DOMAIN-SUFFIX,bytescm.com
+DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,volcvideo.com
+DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,zijieapi.com
+DOMAIN-SUFFIX,zjcdn.com
+
+# --- 抖音 (Douyin) ---
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinpic.com
+DOMAIN-SUFFIX,douyinstatic.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,idouyinvod.com
+DOMAIN-SUFFIX,amemv.com
+
+# --- 资讯与视频 (头条、西瓜) ---
+DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,toutiaoimg.com
+DOMAIN-SUFFIX,toutiaoapi.com
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,ixiguavideo.com
+
+# --- 企业服务与商业化 ---
+DOMAIN-SUFFIX,feishu.cn
+DOMAIN-SUFFIX,oceanengine.com
+DOMAIN-SUFFIX,jinritemai.com
+
+# --- 关键字匹配 ---
+DOMAIN-KEYWORD,bytedance
+DOMAIN-KEYWORD,douyin
