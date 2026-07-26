@@ -14,6 +14,12 @@ DOMAIN-SUFFIX,fsmone.com.sg
 DOMAIN-SUFFIX,fsmone.com.hk
 DOMAIN-SUFFIX,fsmone.com.my
 
+# > 补充：FSM 实际调用的全球底层接口域名 (根据抓包补充)
+DOMAIN-SUFFIX,fsm.global
+
+# > 补充：iFAST/FSM App 内置的第三方移动端安全与风控组件 (根据抓包补充)
+DOMAIN-SUFFIX,zimperium.com
+
 # > iFAST 相关 API 及认证服务
 DOMAIN-SUFFIX,ifast-auth.com
 DOMAIN-SUFFIX,ifast-api.com
