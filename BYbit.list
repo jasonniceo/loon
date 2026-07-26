@@ -1,11 +1,13 @@
-# Coinbase Ruleset for Loon
-# Alias: Bybit
+# ------------------
+#  Bybit 分流规则
+# ------------------
 
 # > Bybit 国际主站及常规服务
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybitglobal.com
 DOMAIN-SUFFIX,bybit.info
 DOMAIN-SUFFIX,bybit.co
+DOMAIN-SUFFIX,bybit.cc
 DOMAIN-SUFFIX,bybit.nl
 DOMAIN-SUFFIX,bybit.hk
 DOMAIN-SUFFIX,bybit.net
@@ -15,11 +17,15 @@ DOMAIN-SUFFIX,bybdc6.com
 # > Bybit App 专用及核心 API 数据流 (App 行情与交易核心)
 DOMAIN-SUFFIX,bytick.com
 
+# > Bybit 隐藏的静态资源 CDN 与客服组件 (防止 App 内图片加载失败或客服断联)
+DOMAIN-SUFFIX,bmacdn.com
+DOMAIN-SUFFIX,bycsi.com
+
 # > Bybit 附属及静态资源
 DOMAIN-SUFFIX,bybitad.com
 DOMAIN-SUFFIX,bybit-affiliates.com
 DOMAIN-SUFFIX,bybit-exchange.github.io
 
-# > 关键字兜底 (防止遗漏新出的动态子域名)
+# > 关键字兜底 (防止遗漏新出的动态子域名，极其精准，无误杀风险)
 DOMAIN-KEYWORD,bybit
 DOMAIN-KEYWORD,bytick
