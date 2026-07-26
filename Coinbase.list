@@ -1,32 +1,27 @@
-# Coinbase Ruleset for Loon
-# Alias: Coinbase
+# ------------------
+#  Coinbase 完整与安全分流规则
+# ------------------
 
-# > Coinbase Main Domains
+# > Coinbase 核心主站、API 与全系子域名
 DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,coinbase.co
 DOMAIN-SUFFIX,coinbase.org
 DOMAIN-SUFFIX,coinbasecloud.dev
 
-# > Coinbase App & Web API / Services
-DOMAIN,api.coinbase.com
-DOMAIN,prime.coinbase.com
-DOMAIN,pro.coinbase.com
-DOMAIN,advanced.coinbase.com
-DOMAIN,exchange.coinbase.com
-DOMAIN,international.coinbase.com
-DOMAIN,wallet.coinbase.com
-DOMAIN,pay.coinbase.com
-
-# > Developer Platform & Ecosystem
+# > Coinbase 开发者生态与区块链基础
 DOMAIN-SUFFIX,base.org
 DOMAIN-SUFFIX,cdp.coinbase.com
 
-# > Static Assets & CDN
+# > Coinbase 专属静态资源与用户内容 (含 KYC 文件上传通道)
 DOMAIN-SUFFIX,coinbase-assets.com
+DOMAIN-SUFFIX,coinbaseusercontent.com
 DOMAIN-SUFFIX,cbstatic.net
 
-# > Websockets & Analytics
-DOMAIN,ws.coinbase.com
-DOMAIN,ws-feed.coinbase.com
-DOMAIN,ws-feed.pro.coinbase.com
-DOMAIN,sentry.coinbase.com
-DOMAIN,segment.coinbase.com
+# > 强制绑定的第三方风控与身份验证组件 (防止 IP 割裂触发封控)
+DOMAIN-SUFFIX,sift.com
+DOMAIN-SUFFIX,siftscience.com
+DOMAIN-SUFFIX,withpersona.com
+DOMAIN-SUFFIX,jumio.com
+
+# > 关键字兜底 (极度精准，无误杀风险)
+DOMAIN-KEYWORD,coinbase
