@@ -1,23 +1,17 @@
 # ------------------
-#  Maya (菲律宾电子钱包/数字银行) 分流规则
+#  Maya (菲律宾数字银行/电子钱包) 完整与安全分流规则
 # ------------------
-# Maya 升级后的新官方主站及 API 域名
+
+# > Maya 核心主站、API 与数字银行底层核心 (补全遗漏)
 DOMAIN-SUFFIX,maya.ph
-DOMAIN-SUFFIX,api.maya.ph
-DOMAIN-SUFFIX,pg.maya.ph
-DOMAIN-SUFFIX,payments.maya.ph
+DOMAIN-SUFFIX,mayabank.ph
 
-# PayMaya 历史沿用域名及业务接口
+# > PayMaya 历史遗留核心域名与静态资源
 DOMAIN-SUFFIX,paymaya.com
-DOMAIN-SUFFIX,api.paymaya.com
-DOMAIN-SUFFIX,connect.paymaya.com
-DOMAIN-SUFFIX,payments.paymaya.com
-DOMAIN-SUFFIX,manager.paymaya.com
-DOMAIN-SUFFIX,pbm.paymaya.com
 
-# 静态资源、SDK 与内容分发
-DOMAIN-SUFFIX,cdn.paymaya.com
+# > 母公司 Voyager Innovations 及关联架构
+DOMAIN-SUFFIX,voyager.ph
 
-# 关联母公司及底层服务关键关键字（选填，用于防止部分风控/埋点走直连导致卡顿）
+# > 关键字兜底 (极度精准，无误杀风险，自动涵盖各类动态前缀与静态 CDN)
 DOMAIN-KEYWORD,paymaya
 DOMAIN-KEYWORD,voyagerinnovations
