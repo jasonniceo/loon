@@ -1,13 +1,19 @@
-# > Monzo (英国) 完整规则集
+# ------------------
+#  Monzo (英国数字银行) 完整与安全分流规则
+# ------------------
 
-# 1. 核心主域名与 API (涵盖网银、App接口、静态资源)
+# > 1. 核心主域名、API (涵盖网银、App接口、静态资源)
 DOMAIN-SUFFIX,monzo.com
 
-# 2. 个人转账与支付链接 (类似 PayPal.me)
+# > 2. 个人转账与支付链接 (类似 PayPal.me)
 DOMAIN-SUFFIX,monzo.me
 
-# 3. 历史遗留域名 (Monzo 早期名为 Mondo，部分老业务或防伪跳转仍可能涉及)
+# > 3. 历史遗留及本土保护域名 (防止底层跳转漏网)
 DOMAIN-SUFFIX,mondo.co.uk
+DOMAIN-SUFFIX,monzo.co.uk
 
-# 4. 关键字兜底
+# > 4. 第三方归因与防欺诈组件 (确保邀请注册链接追踪不断连，避免需人工客服介入补发奖励)
+DOMAIN-SUFFIX,appsflyersdk.com
+
+# > 5. 关键字兜底 (极度精准，无误杀风险)
 DOMAIN-KEYWORD,monzo
