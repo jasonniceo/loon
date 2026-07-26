@@ -1,21 +1,21 @@
-# > Wise 核心及历史域名
+# ------------------
+#  Wise (原 TransferWise) 完整与安全分流规则
+# ------------------
+
+# > Wise 核心主站及 API 通信
 DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,transferwise.com
 DOMAIN-SUFFIX,transferwise.co.uk
 DOMAIN-SUFFIX,transferwise.de
 
-# > 移动端 App 资源与数据同步
+# > 移动端 App 静态资源、底层边缘调度与防伪短链
 DOMAIN-SUFFIX,wise-assets.com
+DOMAIN-SUFFIX,wise.com.edgekey.net
 DOMAIN,wise.prf.hn
 
-# > 关键字匹配 (兜底拦截)
-DOMAIN-KEYWORD,wise
-DOMAIN-KEYWORD,transferwise
-
-# > 核心联名/卡片发行相关技术服务 (用于持卡人验证及 3D 认证等)
+# > 核心联名/卡片发行相关技术服务 (保障线上刷卡 3D 验证顺利弹窗)
 DOMAIN-SUFFIX,tw-3ds.com
 DOMAIN-SUFFIX,wise-captcha.com
 
-# > 强相关风控与合规分析域名 (建议一同走代理，避免直连导致风控或加载失败)
-DOMAIN,api.mixpanel.com
-DOMAIN,api.segment.io
+# > 关键字兜底 (剔除了极易误杀的 wise 单词，保留精准的历史品牌名)
+DOMAIN-KEYWORD,transferwise
