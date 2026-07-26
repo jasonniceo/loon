@@ -1,25 +1,28 @@
-# > Kraken (海妖) 完整规则集
+# ------------------
+#  Kraken (海妖全系 App: Kraken / Kraken Pro) 终极分流规则
+# ------------------
 
-# 1. 核心交易、账户与 API 域名
+# > 1. Kraken 核心主站、API 与地区域名
 DOMAIN-SUFFIX,kraken.com
 DOMAIN-SUFFIX,kraken.io
 DOMAIN-SUFFIX,kraken.net
 
-# 2. 官方母公司及合规域名
+# > 2. 官方母公司及合规基础设施 (防风控割裂核心)
 DOMAIN-SUFFIX,payward.com
 DOMAIN-SUFFIX,payward.asia
 
-# 3. K线图表与行情服务 (Cryptowatch)
+# > 3. K线图表与行情服务核心引擎 (Kraken Pro 深度图表专用)
 DOMAIN-SUFFIX,cryptowat.ch
 DOMAIN-SUFFIX,cryptowatch.com
 DOMAIN-SUFFIX,cryptowatch.de
 DOMAIN-SUFFIX,cwapi.ch
 
-# 4. 静态资源、邮件分发与客服支持
-DOMAIN-SUFFIX,kraken.zendesk.com
+# > 4. 专属静态资源与客服支持 (确保前端界面与在线客服不卡顿)
 DOMAIN-SUFFIX,krakencdn.com
-DOMAIN-SUFFIX,mktoresp.com
+DOMAIN-SUFFIX,kraken.zendesk.com
 
-# 5. 关键字兜底
+# > 5. 全系 App 暴力特征字兜底 (针对 Kraken, Kraken Pro 以及短特征 Krak)
 DOMAIN-KEYWORD,kraken
+DOMAIN-KEYWORD,krakenpro
+DOMAIN-KEYWORD,krak
 DOMAIN-KEYWORD,payward
