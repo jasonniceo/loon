@@ -1,5 +1,22 @@
-# > Neverless 核心官网、App 数据与 API 接口
-DOMAIN-SUFFIX,neverless.com
+# ------------------
+#  Neverless 终极防漏与安全分流规则
+# ------------------
 
-# > 关键字匹配 (兜底拦截相关 CDN 与边缘计算服务)
+# > 1. Neverless 核心主站、API 与备用顶级域名 (确保最高解析优先级，防止防伪跳转漏网)
+DOMAIN-SUFFIX,neverless.com
+DOMAIN-SUFFIX,neverless.app
+DOMAIN-SUFFIX,neverless.io
+DOMAIN-SUFFIX,neverless.co
+
+# > 2. 暴力特征字兜底 (极度安全，无误杀风险，强力拦截所有边缘 CDN、静态资源与动态子域名)
 DOMAIN-KEYWORD,neverless
+
+# =========================================
+# 💡 高危风控提醒 (关于 KYC 身份验证组件)：
+# 如果你在 App 内进行活体面部识别、上传护照件或触发大额出金审核时，遇到摄像头无法加载、
+# 验证一直转圈或频繁失败的情况，绝对是因为底层的第三方 KYC 服务（如 sumsub.com 或 onfido.com）
+# 发生 IP 割裂。
+# 
+# 由于这些是众多金融 App 共享的全局组件，坚决不能单独绑死在 Neverless 的规则里，
+# 建议你在 Loon 中建立一个专门的【全球合规与 KYC】策略组，统筹调配这些域名，确保与主业务 IP 同频。
+# =========================================
