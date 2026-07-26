@@ -1,15 +1,23 @@
-# > Lloyds Bank (英国劳埃德银行) 完整规则集
+# ------------------
+#  Lloyds Bank (英国劳埃德银行) 完整与安全分流规则
+# ------------------
 
-# 1. 核心主域名与个人网银
+# > 1. 核心主站、个人网银与集团现代域名
 DOMAIN-SUFFIX,lloydsbank.com
 DOMAIN-SUFFIX,lloydsbank.co.uk
-
-# 2. 劳埃德银行集团（企业、通用支持域名）
 DOMAIN-SUFFIX,lloydsbankinggroup.com
+DOMAIN-SUFFIX,lloydsbanking.com
 
-# 3. 集团底层基础设施与共享 API（极易被忽略的防风控拦截点）
+# > 2. 集团底层基础设施与共享 API (防止风控割裂)
 DOMAIN-SUFFIX,lbg.co.uk
 
-# 4. 关键字兜底
+# > 3. 极其重要的历史遗留底层域名 (Lloyds TSB 时期代码库遗留)
+DOMAIN-SUFFIX,lloydstsb.com
+DOMAIN-SUFFIX,lloydstsb.co.uk
+
+# > 4. App 与底层架构调用的第三方组件 (如 Dynatrace 环境/性能监控)
+DOMAIN-KEYWORD,dynatrace
+
+# > 5. 关键字兜底 (精准匹配新出的动态子域名，无误杀风险)
 DOMAIN-KEYWORD,lloydsbank
 DOMAIN-KEYWORD,lloydsbanking
