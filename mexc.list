@@ -1,28 +1,22 @@
 # ------------------
-#  MEXC (抹茶交易所) 完整分流规则
+#  MEXC (抹茶交易所) 终极安全与防风控分流规则
 # ------------------
 
-# > 官方主站、多语言及地区备用顶级域名
+# > User-Agent 匹配 (精准捕获客户端 App 底层隐蔽请求)
+USER-AGENT,MEXC*
+USER-AGENT,*mexc*
+
+# > 核心主站与全球备用顶级域名 (MEXC 极其喜欢用小众后缀防封)
 DOMAIN-SUFFIX,mexc.com
-DOMAIN-SUFFIX,mexc.co
 DOMAIN-SUFFIX,mexc.io
-DOMAIN-SUFFIX,mexc.link
-DOMAIN-SUFFIX,mexclife.com
-DOMAIN-SUFFIX,mexc.vip
+DOMAIN-SUFFIX,mexc.am
+DOMAIN-SUFFIX,mexc.fi
+DOMAIN-SUFFIX,mexc.la
+DOMAIN-SUFFIX,mexcglobal.com
 
-# > 核心 CDN、静态资源与图片服务
-DOMAIN-SUFFIX,mexcex.com
-DOMAIN-SUFFIX,mexcimg.com
-DOMAIN-SUFFIX,mexcsvg.com
-DOMAIN-SUFFIX,mexc.com.cdn.cloudflare.net
-
-# > 历史遗留及品牌关联域名
+# > 历史遗留域名与专属 API (防底层老接口漏网直连)
 DOMAIN-SUFFIX,mxc.com
-DOMAIN-SUFFIX,mxc.ai
+DOMAIN-SUFFIX,mxc.pro
 
-# > GitHub 开发者文档
-DOMAIN,mexcdevelop.github.io
-
-# > 关键字匹配 (覆盖所有包含 mexc / mxc 的 API、WS、Static 节点)
+# > 暴力特征字兜底 (极度安全，全面覆盖隐藏的静态资源与 CDN)
 DOMAIN-KEYWORD,mexc
-DOMAIN-KEYWORD,mxcip
