@@ -1,0 +1,13 @@
+# ==========================================
+# Bybit EU (欧洲合规专区 - 强制走欧洲节点)
+# 优先级必须高于 Global 规则
+# ==========================================
+
+# > 欧洲区专属合规主域名与 API
+DOMAIN-SUFFIX,bybit.nl
+DOMAIN-SUFFIX,bybitsatos.com
+DOMAIN-SUFFIX,bybit.eu
+DOMAIN-SUFFIX,bybit.it
+
+# > 如果你有欧洲版专属 App，可以通过特定 UA 拦截 (如有)
+USER-AGENT,BybitEU*
