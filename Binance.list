@@ -1,60 +1,31 @@
 # ------------------
-#  Binance (币安) 完整与安全分流规则
+#  Binance (币安) 终极安全与防风控分流规则
 # ------------------
 
-# > Binance 核心主站及入口
+# > User-Agent 匹配 (极度重要，捕获 App 底层隐蔽请求)
+USER-AGENT,Binance*
+USER-AGENT,*binance*
+USER-AGENT,BNC*
+
+# > 核心主站、API 与全球备用防封域名
 DOMAIN-SUFFIX,binance.com
-DOMAIN-SUFFIX,binance.cc
-DOMAIN-SUFFIX,binance.cloud
-DOMAIN-SUFFIX,binance.co
 DOMAIN-SUFFIX,binance.info
 DOMAIN-SUFFIX,binance.me
-DOMAIN-SUFFIX,binance.net
-DOMAIN-SUFFIX,binance.org
-DOMAIN-SUFFIX,binance.us
-DOMAIN-SUFFIX,binance.vision
-DOMAIN-SUFFIX,binance.im
-DOMAIN-SUFFIX,binance.charity
-DOMAIN-SUFFIX,binancezh.be
-DOMAIN-SUFFIX,binancezh.biz
-DOMAIN-SUFFIX,binancezh.cc
-DOMAIN-SUFFIX,binancezh.co
-DOMAIN-SUFFIX,binancezh.com
-DOMAIN-SUFFIX,binancezh.info
-DOMAIN-SUFFIX,binancezh.net
-DOMAIN-SUFFIX,binancezh.pro
-DOMAIN-SUFFIX,binancezh.top
-
-# > Binance 核心接口、数据流及业务服务
+DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,binanceapi.com
-DOMAIN-SUFFIX,binancecnt.com
-DOMAIN-SUFFIX,binanceru.net
+DOMAIN-SUFFIX,binance.charity
+DOMAIN-SUFFIX,binnodes.com
+
+# > 国内直连优化与前端静态资源 (极易漏网导致 IP 割裂)
+DOMAIN-SUFFIX,bnappzh.com
+DOMAIN-SUFFIX,bnappzh.co
+DOMAIN-SUFFIX,bnappzh.mobi
+DOMAIN-SUFFIX,bn-app.com
+DOMAIN-SUFFIX,bn-app.co
+
+# > 风控遥测、埋点日志与客服组件 (强制走代理，防真实 IP 暴露)
 DOMAIN-SUFFIX,bntrace.com
-DOMAIN-SUFFIX,log.bntrace.com
-DOMAIN-SUFFIX,saasexch.com
-DOMAIN-SUFFIX,saasexch.info
-DOMAIN-SUFFIX,servicesbinance.com
+DOMAIN-SUFFIX,binance.zendesk.com
 
-# > BNB 智能链及公链生态
-DOMAIN-SUFFIX,bnbchain.org
-DOMAIN-SUFFIX,bnbchain.world
-DOMAIN,binance-docs.github.io
-
-# > 币安专属静态资源、App 专用及 CDN
-DOMAIN-SUFFIX,bscdnweb.com
-DOMAIN-SUFFIX,bnbstatic.com
-DOMAIN-SUFFIX,bep20.com
-DOMAIN-SUFFIX,bscscan.com
-DOMAIN-SUFFIX,bnapphz.com
-DOMAIN-SUFFIX,hanqiweb.red
-DOMAIN-SUFFIX,hanqiweb.cn
-DOMAIN-SUFFIX,hanqiweb.net
-DOMAIN-SUFFIX,shyqxxy.com
-
-# > 精准匹配的第三方辅助服务 (剔除了易误杀的宽泛域名)
-DOMAIN-SUFFIX,o529943.ingest.us.sentry.io
-DOMAIN-SUFFIX,appsflyersdk.com
-DOMAIN-SUFFIX,sensorsdata.cn
-
-# > 关键字兜底 (防止遗漏新出的动态子域名)
+# > 暴力特征字兜底 
 DOMAIN-KEYWORD,binance
