@@ -1,0 +1,27 @@
+# > Microsoft Outlook 客户端与 User-Agent (涵盖各平台)
+USER-AGENT,Outlook*
+USER-AGENT,Microsoft%20Outlook*
+USER-AGENT,Microsoft-MacOutlook*
+USER-AGENT,Outlook-iOS*
+USER-AGENT,Outlook-Android*
+
+# > 核心邮箱域名 (Outlook, Hotmail, Live)
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,hotmail.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,live.net
+DOMAIN-SUFFIX,msn.com
+
+# > Office 365 & Exchange 服务端与 API 域名
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,protection.outlook.com
+DOMAIN-SUFFIX,mail.protection.outlook.com
+
+# > 微软账户登录与鉴权 (收发信件及同步必经的 Auth 接口)
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,login.live.com
+DOMAIN-SUFFIX,login.microsoftonline.com
+
+# > 关键字匹配 (作为底层兜底)
+DOMAIN-KEYWORD,outlook
