@@ -1,16 +1,4 @@
-[Rule]
-# === Coins.ph 规则开始 ===
-
-# 匹配 Coins.ph 主域名及所有子域名 (如 api.coins.ph, app.coins.ph)
-DOMAIN-SUFFIX,coins.ph,DIRECT
-
-# 匹配 Coins 亚洲区其他相关域名
-DOMAIN-SUFFIX,coins.asia,DIRECT
-
-# 匹配包含 coinsph 关键词的域名
-DOMAIN-KEYWORD,coinsph,DIRECT
-
-# 匹配客户端 User-Agent (如果有抓包需求可以保留)
-USER-AGENT,Coins*,DIRECT
-
-# === Coins.ph 规则结束 ===
+DOMAIN-SUFFIX,coins.ph
+DOMAIN-SUFFIX,coins.asia
+DOMAIN-KEYWORD,coinsph
+USER-AGENT,Coins*
