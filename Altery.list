@@ -1,0 +1,13 @@
+# > Altery 全平台覆盖（Web网页端 + iOS/Android 客户端）
+
+# 1. User-Agent 规则：精准匹配 iOS/Android App 客户端发出的请求
+USER-AGENT,Altery*,PROXY
+USER-AGENT,*altery*,PROXY
+USER-AGENT,com.recary.altery*,PROXY
+
+# 2. 域名后缀规则：匹配 Web网页端 及各平台通用的底层 API 接口
+DOMAIN-SUFFIX,altery.com,PROXY
+DOMAIN-SUFFIX,recary.com,PROXY
+
+# 3. 关键字规则：兜底拦截，覆盖可能遗漏的静态资源 CDN 或邮件内链
+DOMAIN-KEYWORD,altery,PROXY
