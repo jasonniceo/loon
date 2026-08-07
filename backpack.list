@@ -1,0 +1,14 @@
+# > Backpack Exchange & Wallet 全终端覆盖 (Web / iOS / Android)
+
+# 1. User-Agent 规则：精准捕获 iOS/Android App 客户端流量
+USER-AGENT,Backpack*,PROXY
+USER-AGENT,*backpack*,PROXY
+
+# 2. 域名后缀规则：匹配 Web 端网页、底层 API 接口及相关生态
+DOMAIN-SUFFIX,backpack.exchange,PROXY
+DOMAIN-SUFFIX,backpack.app,PROXY
+DOMAIN-SUFFIX,xnft.gg,PROXY
+DOMAIN-SUFFIX,coral.community,PROXY
+
+# 3. 关键字规则：兜底拦截，覆盖可能遗漏的静态资源 CDN 
+DOMAIN-KEYWORD,backpack,PROXY
