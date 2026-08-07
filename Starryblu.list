@@ -1,0 +1,12 @@
+# > Starryblu (全球支付/多币种账户) 全终端覆盖
+
+# 1. User-Agent 规则：精准捕获 iOS/Android App 客户端流量
+USER-AGENT,Starryblu*
+USER-AGENT,*starryblu*
+USER-AGENT,com.nextpls.starryblu*
+
+# 2. 域名后缀规则：匹配 Web 官方主站及 App 底层 API 接口
+DOMAIN-SUFFIX,starryblu.com
+
+# 3. 关键字规则：兜底拦截，覆盖其可能跨域调用的静态资源 CDN 或验证组件
+DOMAIN-KEYWORD,starryblu
