@@ -1,0 +1,32 @@
+# > Interactive Brokers (盈透证券 / IBKR) 全终端覆盖
+
+# 1. User-Agent 规则：精准捕获 iOS/Android App (IBKR Mobile / GlobalTrader) 及 TWS 桌面客户端流量
+USER-AGENT,IBKR*
+USER-AGENT,*IBKR*
+USER-AGENT,InteractiveBrokers*
+USER-AGENT,*interactivebrokers*
+USER-AGENT,TWS*
+USER-AGENT,com.interactivebrokers.*
+USER-AGENT,com.ibkr.*
+
+# 2. 域名后缀规则：覆盖官网、Client Portal 网页端、TWS 行情/交易 API 及全球各区域域名
+DOMAIN-SUFFIX,interactivebrokers.com
+DOMAIN-SUFFIX,interactivebrokers.co.uk
+DOMAIN-SUFFIX,interactivebrokers.com.hk
+DOMAIN-SUFFIX,interactivebrokers.com.au
+DOMAIN-SUFFIX,interactivebrokers.ca
+DOMAIN-SUFFIX,interactivebrokers.eu
+DOMAIN-SUFFIX,interactivebrokers.co.jp
+DOMAIN-SUFFIX,interactivebrokers.org
+DOMAIN-SUFFIX,interactivebrokers.info
+DOMAIN-SUFFIX,ibkr.com
+DOMAIN-SUFFIX,ibkr.eu
+DOMAIN-SUFFIX,ibkr.com.hk
+DOMAIN-SUFFIX,ibkr.app
+DOMAIN-SUFFIX,ibkr.me
+DOMAIN-SUFFIX,ibllc.com
+DOMAIN-SUFFIX,tradersinsight.news
+
+# 3. 关键字规则：兜底拦截，覆盖跨域调用的数据源、验证系统及客服系统
+DOMAIN-KEYWORD,interactivebrokers
+DOMAIN-KEYWORD,ibkr
