@@ -1,0 +1,17 @@
+# > ether.fi (质押协议 / eETH / ether.fi Cash 加密卡) 全平台覆盖
+
+# 1. User-Agent 规则：精准捕获 iOS/Android App 客户端及生态应用的流量
+USER-AGENT,ether.fi*
+USER-AGENT,*ether.fi*
+USER-AGENT,etherfi*
+USER-AGENT,*etherfi*
+USER-AGENT,com.etherfi.*
+
+# 2. 域名后缀规则：匹配 Web 端主站、DeFi 前端、App 底层 API 及备用域名
+DOMAIN-SUFFIX,ether.fi
+DOMAIN-SUFFIX,etherfi.com
+DOMAIN-SUFFIX,eeth.finance
+
+# 3. 关键字规则：兜底拦截，覆盖其可能跨域调用的静态资源 CDN、第三方 KYC 验证或客服组件
+DOMAIN-KEYWORD,etherfi
+DOMAIN-KEYWORD,ether.fi
