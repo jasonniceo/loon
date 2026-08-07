@@ -1,0 +1,30 @@
+# > Bitget & Bitget Wallet (原 BitKeep) 全终端覆盖
+
+# 1. User-Agent 规则：精准捕获 iOS/Android/桌面端 App 的流量
+USER-AGENT,Bitget*
+USER-AGENT,*bitget*
+USER-AGENT,BitKeep*
+USER-AGENT,*bitkeep*
+USER-AGENT,BitgetWallet*
+USER-AGENT,com.bitget.*
+USER-AGENT,com.bitkeep.*
+
+# 2. 域名后缀规则：匹配 Web 端网页、App 底层 API 及短链接系统
+DOMAIN-SUFFIX,bitget.com
+DOMAIN-SUFFIX,bitget.fit
+DOMAIN-SUFFIX,bitget.site
+DOMAIN-SUFFIX,bitget.vip
+DOMAIN-SUFFIX,bitget.media
+DOMAIN-SUFFIX,bitgetapp.com
+DOMAIN-SUFFIX,bg.com
+DOMAIN-SUFFIX,bgapp.com
+
+# Bitget Wallet / BitKeep 专属及生态域名
+DOMAIN-SUFFIX,bitgetwallet.com
+DOMAIN-SUFFIX,bitkeep.com
+DOMAIN-SUFFIX,bitkeep.vip
+DOMAIN-SUFFIX,bitkeep.org
+
+# 3. 关键字规则：兜底拦截，覆盖其跨域调用的静态 CDN、第三方客服或 KYC 验证组件
+DOMAIN-KEYWORD,bitget
+DOMAIN-KEYWORD,bitkeep
