@@ -1,0 +1,39 @@
+# > Gate (Gate.io / Gate.com) & Gate Web3 全终端覆盖
+
+# 1. User-Agent 规则：精准捕获 iOS/Android/桌面端 App 的流量
+USER-AGENT,Gateio*
+USER-AGENT,*gateio*
+USER-AGENT,GateWeb3*
+USER-AGENT,*gateweb3*
+USER-AGENT,com.gateio.*
+USER-AGENT,com.gate.*
+
+# 2. 域名后缀规则：匹配 Web 端主站、App 底层 API、备用防封域名及静态资源 CDN
+DOMAIN-SUFFIX,gate.io
+DOMAIN-SUFFIX,gate.com
+DOMAIN-SUFFIX,gate.ac
+DOMAIN-SUFFIX,gate.biz
+DOMAIN-SUFFIX,gate.cx
+DOMAIN-SUFFIX,gate.hk
+DOMAIN-SUFFIX,gate.trade
+DOMAIN-SUFFIX,gate.tech
+DOMAIN-SUFFIX,gateio.ch
+DOMAIN-SUFFIX,gateio.services
+DOMAIN-SUFFIX,gateio.live
+DOMAIN-SUFFIX,gateio.ws
+DOMAIN-SUFFIX,gateapi.io
+DOMAIN-SUFFIX,gate-api.com
+DOMAIN-SUFFIX,gateimg.com
+
+# Gate Web3 钱包及 GateChain 链上生态接口
+DOMAIN-SUFFIX,gateweb3.com
+DOMAIN-SUFFIX,gateweb3.io
+DOMAIN-SUFFIX,gateweb3.net
+DOMAIN-SUFFIX,gatechain.io
+DOMAIN-SUFFIX,gatescan.org
+DOMAIN-SUFFIX,gatenode.cc
+
+# 3. 关键字规则：兜底拦截，覆盖其可能遗漏的短链接、第三方客服或验证组件
+DOMAIN-KEYWORD,gateio
+DOMAIN-KEYWORD,gateweb3
+DOMAIN-KEYWORD,gatechain
