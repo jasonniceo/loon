@@ -1,7 +1,14 @@
 # ==========================================
 # Monzo
-# 目标：Monzo App / Web / API / Open Banking
+# App / Web
+# Developer API
+# Open Banking
+# Webhooks
 # ==========================================
 
-# 自动覆盖 api.monzo.com / openbanking.monzo.com 等
+# 自动覆盖：
+# www.monzo.com
+# api.monzo.com
+# openbanking.monzo.com
+# 以及其它 *.monzo.com
 DOMAIN-SUFFIX,monzo.com
