@@ -1,5 +1,18 @@
-USER-AGENT,*MEXC*
+# NAME: MEXC
 
+# 精确主机匹配
+DOMAIN,www.mexc.com
+DOMAIN,api.mexc.com
+DOMAIN,contract.mexc.com
+
+# 专属域名体系
 DOMAIN-SUFFIX,mexc.com
 
+# 专属业务依赖
+DOMAIN,static.mocortech.com
+
+# 品牌关键字兜底
 DOMAIN-KEYWORD,mexc
+
+# 共享基础设施依赖
+DOMAIN,mexc.onelink.me
