@@ -1,17 +1,14 @@
-# ------------------
-#  Maya (菲律宾数字银行/电子钱包) 完整与安全分流规则
-# ------------------
+# ==========================================
+# Maya / Maya Bank (Philippines)
+# 目标：Maya App / Wallet / Bank / Payments
+# ==========================================
 
-# > Maya 核心主站、API 与数字银行底层核心 (补全遗漏)
+# Maya 主站与支付生产环境
+# pg.maya.ph / payments.maya.ph 等
 DOMAIN-SUFFIX,maya.ph
+
+# Maya Bank（储蓄/信贷/银行服务）
 DOMAIN-SUFFIX,mayabank.ph
 
-# > PayMaya 历史遗留核心域名与静态资源
+# PayMaya 历史/兼容/API 环境
 DOMAIN-SUFFIX,paymaya.com
-
-# > 母公司 Voyager Innovations 及关联架构
-DOMAIN-SUFFIX,voyager.ph
-
-# > 关键字兜底 (极度精准，无误杀风险，自动涵盖各类动态前缀与静态 CDN)
-DOMAIN-KEYWORD,paymaya
-DOMAIN-KEYWORD,voyagerinnovations
