@@ -1,12 +1,2 @@
-# ==========================================
-# Altery
-# 官网 / App / Web / 支付 / 帮助中心
-# ==========================================
-
-# 主域名
-# 覆盖：
-# www.altery.com
-# help.altery.com
-# payments.altery.com
-# 以及其它 *.altery.com 服务
+USER-AGENT,*Altery*
 DOMAIN-SUFFIX,altery.com
