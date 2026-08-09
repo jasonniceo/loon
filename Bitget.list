@@ -1,19 +1,25 @@
 # ==========================================
 # Bitget
-# 目标：交易所 App / Web / REST / WebSocket / 静态资源
+# Exchange / App / Web / UTA
+# Spot / Futures / REST / WebSocket
+# Bitget Wallet / Web3 / 静态资源
 # ==========================================
 
-# 主站、API、WebSocket（api.bitget.com / ws.bitget.com 等）
+# ------------------------------------------
+# 主站 + API + WS + Web3 Wallet
+# ------------------------------------------
+
+# 自动覆盖：
+# www.bitget.com
+# api.bitget.com
+# ws.bitget.com
+# web3.bitget.com
+# App / Spot / Futures / Copy Trading
 DOMAIN-SUFFIX,bitget.com
 
-# App/服务兼容域名
-DOMAIN-SUFFIX,bitgetapp.com
+# ------------------------------------------
+# 图片 / PDF / 静态资源
+# ------------------------------------------
 
-# 图片 / 静态资源
+# img.bitgetimg.com 等
 DOMAIN-SUFFIX,bitgetimg.com
-
-# Bitget Wallet（原 BitKeep）兼容域名
-# 如你只使用交易所 App，保留也不会影响 Bybit/Binance 等其它规则；
-# 若另给 Bitget Wallet 单独做策略，则应从本文件移除。
-DOMAIN-SUFFIX,bitkeep.com
-DOMAIN-SUFFIX,bitkeep.io
