@@ -1,21 +1,14 @@
-# ------------------
-#  Wise (原 TransferWise) 完整与安全分流规则
-# ------------------
+# ==========================================
+# Wise
+# 注意：按你截图中的文件名保留为 Wsie.list
+# 目标：Wise App / Web / API / 旧 TransferWise 兼容
+# ==========================================
 
-# > Wise 核心主站及 API 通信
+# 主站与生产 API（api.wise.com）
 DOMAIN-SUFFIX,wise.com
+
+# API Sandbox（不会影响生产使用）
+DOMAIN-SUFFIX,wise-sandbox.com
+
+# mTLS / 旧 TransferWise 兼容 API
 DOMAIN-SUFFIX,transferwise.com
-DOMAIN-SUFFIX,transferwise.co.uk
-DOMAIN-SUFFIX,transferwise.de
-
-# > 移动端 App 静态资源、底层边缘调度与防伪短链
-DOMAIN-SUFFIX,wise-assets.com
-DOMAIN-SUFFIX,wise.com.edgekey.net
-DOMAIN,wise.prf.hn
-
-# > 核心联名/卡片发行相关技术服务 (保障线上刷卡 3D 验证顺利弹窗)
-DOMAIN-SUFFIX,tw-3ds.com
-DOMAIN-SUFFIX,wise-captcha.com
-
-# > 关键字兜底 (剔除了极易误杀的 wise 单词，保留精准的历史品牌名)
-DOMAIN-KEYWORD,transferwise
