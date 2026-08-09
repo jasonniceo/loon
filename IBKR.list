@@ -1,73 +1,18 @@
-# ==========================================
-# Interactive Brokers / IBKR
-#
-# IBKR Mobile
-# IBKR Desktop
-# Client Portal
-# Trader Workstation
-# Web API
-# Account Management
-# 全球地区站
-# 官方帮助文档
-# ==========================================
-
-# ------------------------------------------
-# 美国 / 全球
-# ------------------------------------------
+USER-AGENT,*IBKR*
+USER-AGENT,*InteractiveBrokers*
 
 DOMAIN-SUFFIX,interactivebrokers.com
-
-# ------------------------------------------
-# 英国
-# ------------------------------------------
-
 DOMAIN-SUFFIX,interactivebrokers.co.uk
-
-# ------------------------------------------
-# 爱尔兰
-# ------------------------------------------
-
 DOMAIN-SUFFIX,interactivebrokers.ie
-
-# ------------------------------------------
-# 加拿大
-# ------------------------------------------
-
 DOMAIN-SUFFIX,interactivebrokers.ca
-
-# ------------------------------------------
-# 澳大利亚
-# ------------------------------------------
-
 DOMAIN-SUFFIX,interactivebrokers.com.au
-
-# ------------------------------------------
-# 香港
-# ------------------------------------------
-
 DOMAIN-SUFFIX,interactivebrokers.com.hk
-
-# ------------------------------------------
-# 印度
-# ------------------------------------------
-
 DOMAIN-SUFFIX,interactivebrokers.co.in
-
-# ------------------------------------------
-# 日本
-# ------------------------------------------
-
 DOMAIN-SUFFIX,interactivebrokers.co.jp
-
-# ------------------------------------------
-# 新加坡
-# ------------------------------------------
-
 DOMAIN-SUFFIX,interactivebrokers.com.sg
 
-# ------------------------------------------
-# 官方 IBKR Guides
-# IBKR Mobile / Desktop / TWS / Client Portal 文档
-# ------------------------------------------
-
+DOMAIN-SUFFIX,ibkr.com
 DOMAIN-SUFFIX,ibkrguides.com
+
+DOMAIN-KEYWORD,interactivebrokers
+DOMAIN-KEYWORD,ibkr
