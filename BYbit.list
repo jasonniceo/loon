@@ -1,55 +1,14 @@
-# ==========================================
-# Bybit Global
-# 国际版 Bybit
-#
-# 与 Bybit EU 完全隔离
-# ==========================================
+USER-AGENT,*Bybit*
 
-# ------------------------------------------
-# 国际主站 / App / REST / WebSocket
-# ------------------------------------------
-
-# 自动覆盖：
-# www.bybit.com
-# api.bybit.com
-# api-testnet.bybit.com
-# stream.bybit.com
-# testnet.bybit.com
-# App / Spot / Futures / Options / Earn / Card 等
 DOMAIN-SUFFIX,bybit.com
-
-# 官方备用 API
-# 包括 api.bytick.com
 DOMAIN-SUFFIX,bytick.com
 
-# ------------------------------------------
-# Bybit 非 EEA 地区官方服务
-# ------------------------------------------
-
-# Turkey
 DOMAIN-SUFFIX,bybit.tr
-
-# Kazakhstan
+DOMAIN-SUFFIX,bybit-tr.com
 DOMAIN-SUFFIX,bybit.kz
-
-# Georgia
 DOMAIN-SUFFIX,bybitgeorgia.ge
-
-# UAE
 DOMAIN-SUFFIX,bybit.ae
-
-# Indonesia
 DOMAIN-SUFFIX,bybit.id
-
-# Japan API
-# 只写官方 Bybit API 主机，
-# 不把整个 manepa.jp 全部劫持到 Bybit
-DOMAIN,api.manepa.jp
-DOMAIN,api-testnet.manepa.jp
-
-# ------------------------------------------
-# 旧入口 / 兼容域
-# ------------------------------------------
 
 DOMAIN-SUFFIX,bybitglobal.com
 DOMAIN-SUFFIX,bybit.info
@@ -60,26 +19,12 @@ DOMAIN-SUFFIX,bybit.net
 DOMAIN-SUFFIX,bybit.org
 DOMAIN-SUFFIX,bybdc6.com
 
-# ------------------------------------------
-# 静态资源 / CDN / 业务组件
-# ------------------------------------------
-
 DOMAIN-SUFFIX,bmacdn.com
 DOMAIN-SUFFIX,bycsi.com
 DOMAIN-SUFFIX,bybitad.com
 DOMAIN-SUFFIX,bybit-affiliates.com
 
-# 官方 API 文档
+DOMAIN,api.manepa.jp
+DOMAIN,api-testnet.manepa.jp
+
 DOMAIN,bybit-exchange.github.io
-
-# ==========================================
-# 禁止加入
-# ==========================================
-
-# DOMAIN-SUFFIX,bybit.eu
-# DOMAIN-SUFFIX,bybit.nl
-# DOMAIN-SUFFIX,bybit.it
-# DOMAIN-SUFFIX,bybitsatos.com
-
-# DOMAIN-KEYWORD,bybit
-# DOMAIN-KEYWORD,bytick
