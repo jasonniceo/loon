@@ -1,20 +1,7 @@
-# ==========================================
-# Coinbase
-# App / Web / Advanced Trade
-# Spot / Derivatives
-# REST / WebSocket / 静态资源
-# ==========================================
+USER-AGENT,*Coinbase*
 
-# 一个根域覆盖 Coinbase 自有核心体系：
-#
-# www.coinbase.com
-# api.coinbase.com
-#
-# advanced-trade-ws.coinbase.com
-# advanced-trade-ws-user.coinbase.com
-#
-# static-assets.coinbase.com
-# dynamic-assets.coinbase.com
-#
-# 其它 *.coinbase.com
 DOMAIN-SUFFIX,coinbase.com
+
+DOMAIN,coinbase.statuspage.io
+
+DOMAIN-KEYWORD,coinbase
