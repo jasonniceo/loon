@@ -1,25 +1,11 @@
-# ==========================================
-# Bitget
-# Exchange / App / Web / UTA
-# Spot / Futures / REST / WebSocket
-# Bitget Wallet / Web3 / 静态资源
-# ==========================================
+USER-AGENT,*Bitget*
+USER-AGENT,*BitKeep*
 
-# ------------------------------------------
-# 主站 + API + WS + Web3 Wallet
-# ------------------------------------------
-
-# 自动覆盖：
-# www.bitget.com
-# api.bitget.com
-# ws.bitget.com
-# web3.bitget.com
-# App / Spot / Futures / Copy Trading
 DOMAIN-SUFFIX,bitget.com
-
-# ------------------------------------------
-# 图片 / PDF / 静态资源
-# ------------------------------------------
-
-# img.bitgetimg.com 等
 DOMAIN-SUFFIX,bitgetimg.com
+
+DOMAIN-SUFFIX,bitkeep.com
+DOMAIN-SUFFIX,bitkeep.io
+
+DOMAIN-KEYWORD,bitget
+DOMAIN-KEYWORD,bitkeep
