@@ -1,28 +1,60 @@
 # ==========================================
 # Binance
-# 目标：主站 / App / REST / WebSocket / Pay / 静态资源
+# Web / App / Spot / Futures / Options
+# REST / WebSocket / Pay / 静态资源
 # ==========================================
 
-# 主站与官方地区/备用入口
-DOMAIN-SUFFIX,binance.com
-DOMAIN-SUFFIX,binance.cloud
-DOMAIN-SUFFIX,binance.co
-DOMAIN-SUFFIX,binance.cc
-DOMAIN-SUFFIX,binance.info
-DOMAIN-SUFFIX,binance.me
-DOMAIN-SUFFIX,binance.net
-DOMAIN-SUFFIX,binance.org
-DOMAIN-SUFFIX,binance.vision
+# ------------------------------------------
+# Binance 主站
+# ------------------------------------------
 
-# API / Binance Pay / Mini Program
+# 自动覆盖：
+# www.binance.com
+# api.binance.com
+# api1.binance.com
+# api2.binance.com
+# api3.binance.com
+# api4.binance.com
+# api-gcp.binance.com
+#
+# ws-api.binance.com
+# stream.binance.com
+#
+# fapi.binance.com
+# fstream.binance.com
+#
+# dapi.binance.com
+# dstream.binance.com
+#
+# app.binance.com
+DOMAIN-SUFFIX,binance.com
+
+# ------------------------------------------
+# Binance Pay / Open Platform / Mini Program
+# ------------------------------------------
+
+# 包括：
+# bpay.binanceapi.com
+# dip-cb.binanceapi.com
 DOMAIN-SUFFIX,binanceapi.com
 
-# 官方静态资源 / 前端资源 / 日志链路
-DOMAIN-SUFFIX,bnbstatic.com
-DOMAIN-SUFFIX,bscdnweb.com
-DOMAIN-SUFFIX,bntrace.com
+# ------------------------------------------
+# 官方 Testnet
+# ------------------------------------------
 
-# 说明：
-# api.binance.com / ws-api.binance.com / stream.binance.com /
-# fstream.binance.com / dstream.binance.com / nbstream.binance.com
-# 均已由 DOMAIN-SUFFIX,binance.com 覆盖。
+# ws-api.testnet.binance.vision 等
+DOMAIN-SUFFIX,binance.vision
+
+# ------------------------------------------
+# 官方图片 / JS / CSS / Web3 静态资源
+# ------------------------------------------
+
+# bin.bnbstatic.com
+# public.bnbstatic.com
+DOMAIN-SUFFIX,bnbstatic.com
+
+# Binance Square 等静态资源
+DOMAIN-SUFFIX,bscdnweb.com
+
+# Binance 消息 / 跳转 / 日志链路
+DOMAIN-SUFFIX,bntrace.com
