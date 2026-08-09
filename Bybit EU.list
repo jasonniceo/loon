@@ -1,0 +1,16 @@
+# ==========================================
+# Bybit EU
+# 欧洲合规版 / EEA
+# 必须优先于 Bybit Global
+# ==========================================
+
+# EU 主域名
+DOMAIN-SUFFIX,bybit.eu
+
+# EU / 欧洲历史及地区域名
+DOMAIN-SUFFIX,bybit.nl
+DOMAIN-SUFFIX,bybit.it
+DOMAIN-SUFFIX,bybitsatos.com
+
+# 欧洲版 App UA 辅助匹配
+USER-AGENT,BybitEU*
