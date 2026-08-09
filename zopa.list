@@ -1,19 +1,5 @@
-# ==========================================
-# Zopa Bank
-#
-# Zopa App
-# Current Account / Biscuit
-# Savings
-# Credit Card
-# Loans
-# Car Finance
-# Account
-# Help
-# ==========================================
+USER-AGENT,*Zopa*
 
-# 自动覆盖：
-#
-# www.zopa.com
-# home.zopa.com
-# help / app / account 等 Zopa 自有服务
 DOMAIN-SUFFIX,zopa.com
+
+DOMAIN-KEYWORD,zopa
