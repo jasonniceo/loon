@@ -1,22 +1,7 @@
-# ------------------
-#  MEXC (抹茶交易所) 终极安全与防风控分流规则
-# ------------------
+# ==========================================
+# MEXC
+# 目标：MEXC App / Spot / Futures / REST / WebSocket
+# ==========================================
 
-# > User-Agent 匹配 (精准捕获客户端 App 底层隐蔽请求)
-USER-AGENT,MEXC*
-USER-AGENT,*mexc*
-
-# > 核心主站与全球备用顶级域名 (MEXC 极其喜欢用小众后缀防封)
+# api.mexc.com / contract.mexc.com 等全部覆盖
 DOMAIN-SUFFIX,mexc.com
-DOMAIN-SUFFIX,mexc.io
-DOMAIN-SUFFIX,mexc.am
-DOMAIN-SUFFIX,mexc.fi
-DOMAIN-SUFFIX,mexc.la
-DOMAIN-SUFFIX,mexcglobal.com
-
-# > 历史遗留域名与专属 API (防底层老接口漏网直连)
-DOMAIN-SUFFIX,mxc.com
-DOMAIN-SUFFIX,mxc.pro
-
-# > 暴力特征字兜底 (极度安全，全面覆盖隐藏的静态资源与 CDN)
-DOMAIN-KEYWORD,mexc
