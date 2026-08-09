@@ -1,5 +1,15 @@
 # ==========================================
 # Starryblu
-# 目标：Starryblu App / Web / 账户服务
+# App / Web
+# Account / Global Transfer
+# Multi-Currency / Card / Security
+# Blog / SG 地区入口
 # ==========================================
+
+# 自动覆盖：
+#
+# www.starryblu.com
+# sg.starryblu.com
+# 其它地区子域
+# App / 登录 / 支付 / 安全页面
 DOMAIN-SUFFIX,starryblu.com
