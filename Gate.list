@@ -1,34 +1,11 @@
-# ==========================================
-# Gate
-# Gate App / Web
-# Spot / Margin / Futures / Delivery
-# REST / WebSocket / Testnet
-# 静态资源 / 历史 Gate.io
-# ==========================================
+USER-AGENT,*Gate.io*
+USER-AGENT,*GateIO*
 
-# 当前主站
 DOMAIN-SUFFIX,gate.com
-
-# Gate.io 历史及兼容站
 DOMAIN-SUFFIX,gate.io
-
-# ------------------------------------------
-# REST / WebSocket
-# ------------------------------------------
-
-# 包括：
-# api.gateio.ws
-# fx-api.gateio.ws
-# fx-ws.gateio.ws
-# fx-ws-testnet.gateio.ws
 DOMAIN-SUFFIX,gateio.ws
-
-# Testnet
-# api-testnet.gateapi.io
 DOMAIN-SUFFIX,gateapi.io
-
-# ------------------------------------------
-# 图片 / 静态资源
-# ------------------------------------------
-
+DOMAIN-SUFFIX,gateio.io
 DOMAIN-SUFFIX,gateimg.com
+
+DOMAIN-KEYWORD,gateio
