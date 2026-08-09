@@ -1,5 +1,13 @@
 # ==========================================
 # Neverless
-# 目标：Neverless App / Web / 账户与交易服务
+#
+# App / Website
+# Crypto
+# Stocks
+# Invest
+# Strategies
+# Account
 # ==========================================
+
+# 自动覆盖所有 Neverless 自有子域
 DOMAIN-SUFFIX,neverless.com
