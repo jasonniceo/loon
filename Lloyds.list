@@ -1,13 +1,8 @@
-# ==========================================
-# Lloyds Bank
-# Personal Banking / Mobile Banking
-# Internet Banking / International
-# Business / Credit Card / Savings
-# ==========================================
+USER-AGENT,*Lloyds*
+USER-AGENT,*LloydsBank*
 
-# 官网及官方在线服务
 DOMAIN-SUFFIX,lloydsbank.com
-
-# Lloyds 历史/邮件/兼容域
-# 保留用于旧链路和部分服务兼容
 DOMAIN-SUFFIX,lloydsbank.co.uk
+DOMAIN-SUFFIX,lloydsbankinggroup.com
+
+DOMAIN-KEYWORD,lloydsbank
