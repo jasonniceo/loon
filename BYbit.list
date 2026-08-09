@@ -1,11 +1,14 @@
 # ==========================================
-# Bybit Global
-# 国际版 Bybit
-# 不包含 Bybit EU
+# Bybit Global - 国际版
+# 重要：与 Bybit EU 完全分开
+# 重要：不要加入 DOMAIN-KEYWORD,bybit / bytick
 # ==========================================
 
-# 国际主站
+# 国际主站 / API / WebSocket
 DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bytick.com
+
+# 国际站备用/地区/历史入口
 DOMAIN-SUFFIX,bybitglobal.com
 DOMAIN-SUFFIX,bybit.info
 DOMAIN-SUFFIX,bybit.co
@@ -15,16 +18,14 @@ DOMAIN-SUFFIX,bybit.net
 DOMAIN-SUFFIX,bybit.org
 DOMAIN-SUFFIX,bybdc6.com
 
-# 国际版 API / WebSocket
-DOMAIN-SUFFIX,bytick.com
-
-# CDN / 静态资源 / 客服
+# 静态资源 / 客服 / 业务组件
 DOMAIN-SUFFIX,bmacdn.com
 DOMAIN-SUFFIX,bycsi.com
-
-# 附属资源
 DOMAIN-SUFFIX,bybitad.com
 DOMAIN-SUFFIX,bybit-affiliates.com
 
-# GitHub API 文档
-DOMAIN-SUFFIX,bybit-exchange.github.io
+# Bybit 官方 API 文档（精确域名，避免把整个 github.io 纳入）
+DOMAIN,bybit-exchange.github.io
+
+# 严禁在此加入以下 EU 根域：
+# bybit.eu / bybit.nl / bybit.it / bybitsatos.com
