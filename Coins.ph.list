@@ -1,5 +1,13 @@
-USER-AGENT,*Coins.ph*
-USER-AGENT,*Coins*
+# NAME: Coins.ph
 
-DOMAIN-SUFFIX,coins
+# 精确主机匹配
+DOMAIN,www.coins.ph
+DOMAIN,www.pro.coins.ph
+DOMAIN,api.pro.coins.ph
+DOMAIN,wsapi.pro.coins.ph
+
+# 专属域名体系
 DOMAIN-SUFFIX,coins.ph
+
+# 专属业务依赖
+DOMAIN,static.pro.coins.xyz
