@@ -1,31 +1,28 @@
-# ------------------
-#  Binance (币安) 终极安全与防风控分流规则
-# ------------------
+# ==========================================
+# Binance
+# 目标：主站 / App / REST / WebSocket / Pay / 静态资源
+# ==========================================
 
-# > User-Agent 匹配 (极度重要，捕获 App 底层隐蔽请求)
-USER-AGENT,Binance*
-USER-AGENT,*binance*
-USER-AGENT,BNC*
-
-# > 核心主站、API 与全球备用防封域名
+# 主站与官方地区/备用入口
 DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binance.co
+DOMAIN-SUFFIX,binance.cc
 DOMAIN-SUFFIX,binance.info
 DOMAIN-SUFFIX,binance.me
-DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binance.net
+DOMAIN-SUFFIX,binance.org
+DOMAIN-SUFFIX,binance.vision
+
+# API / Binance Pay / Mini Program
 DOMAIN-SUFFIX,binanceapi.com
-DOMAIN-SUFFIX,binance.charity
-DOMAIN-SUFFIX,binnodes.com
 
-# > 国内直连优化与前端静态资源 (极易漏网导致 IP 割裂)
-DOMAIN-SUFFIX,bnappzh.com
-DOMAIN-SUFFIX,bnappzh.co
-DOMAIN-SUFFIX,bnappzh.mobi
-DOMAIN-SUFFIX,bn-app.com
-DOMAIN-SUFFIX,bn-app.co
-
-# > 风控遥测、埋点日志与客服组件 (强制走代理，防真实 IP 暴露)
+# 官方静态资源 / 前端资源 / 日志链路
+DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,bscdnweb.com
 DOMAIN-SUFFIX,bntrace.com
-DOMAIN-SUFFIX,binance.zendesk.com
 
-# > 暴力特征字兜底 
-DOMAIN-KEYWORD,binance
+# 说明：
+# api.binance.com / ws-api.binance.com / stream.binance.com /
+# fstream.binance.com / dstream.binance.com / nbstream.binance.com
+# 均已由 DOMAIN-SUFFIX,binance.com 覆盖。
