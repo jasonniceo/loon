@@ -1,16 +1,20 @@
 # ==========================================
-# Bybit EU
-# 欧洲合规版 / EEA
-# 必须优先于 Bybit Global
+# Bybit EU - 欧洲合规版独立规则
+# 必须优先于 BYbit.list / Global / GEOIP / FINAL
 # ==========================================
 
-# EU 主域名
+# EU 主域名；自动覆盖 api3.bybit.eu、ws2.bybit.eu 等所有子域
 DOMAIN-SUFFIX,bybit.eu
 
-# EU / 欧洲历史及地区域名
+# 欧洲版/历史/地区域名
 DOMAIN-SUFFIX,bybit.nl
 DOMAIN-SUFFIX,bybit.it
 DOMAIN-SUFFIX,bybitsatos.com
 
-# 欧洲版 App UA 辅助匹配
+# EU App UA 辅助匹配；不能替代域名规则
 USER-AGENT,BybitEU*
+
+# 严禁加入：
+# DOMAIN-KEYWORD,bybit
+# DOMAIN-KEYWORD,bytick
+# 也不要把 bytick.com 强行放进 EU；它保留给 Bybit Global。
