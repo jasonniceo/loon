@@ -1,7 +1,19 @@
 # ==========================================
 # ether.fi
-# 目标：ether.fi App / Cash / Staking / Help / Web
+#
+# Website
+# ether.fi App
+# Cash
+# Card
+# Earn
+# Staking
+# Help Center
 # ==========================================
 
-# 自动覆盖 app.ether.fi / help.ether.fi 等
+# 自动覆盖：
+#
+# www.ether.fi
+# app.ether.fi
+# help.ether.fi
+# Cash / Card / Earn / Staking
 DOMAIN-SUFFIX,ether.fi
