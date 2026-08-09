@@ -1,18 +1,5 @@
-# ==========================================
-# MEXC
-#
-# App / Web
-# Spot / Futures
-# REST / WebSocket
-# User Stream
-# Contract
-# ==========================================
+USER-AGENT,*MEXC*
 
-# 一个根域自动覆盖：
-#
-# www.mexc.com
-# api.mexc.com
-# wbs-api.mexc.com
-# contract.mexc.com
-# MEXC Spot / Futures / App 等
 DOMAIN-SUFFIX,mexc.com
+
+DOMAIN-KEYWORD,mexc
