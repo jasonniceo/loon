@@ -1,6 +1,12 @@
 # ==========================================
 # Altery
-# 目标：Altery App / Web / API / 支付相关的自有域名
+# 官网 / App / Web / 支付 / 帮助中心
 # ==========================================
-# DOMAIN-SUFFIX 会自动覆盖 api.*, docs.*, help.*, payments.* 等子域名
+
+# 主域名
+# 覆盖：
+# www.altery.com
+# help.altery.com
+# payments.altery.com
+# 以及其它 *.altery.com 服务
 DOMAIN-SUFFIX,altery.com
