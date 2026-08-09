@@ -1,60 +1,12 @@
-# ==========================================
-# Binance
-# Web / App / Spot / Futures / Options
-# REST / WebSocket / Pay / 静态资源
-# ==========================================
+USER-AGENT,*Binance*
 
-# ------------------------------------------
-# Binance 主站
-# ------------------------------------------
-
-# 自动覆盖：
-# www.binance.com
-# api.binance.com
-# api1.binance.com
-# api2.binance.com
-# api3.binance.com
-# api4.binance.com
-# api-gcp.binance.com
-#
-# ws-api.binance.com
-# stream.binance.com
-#
-# fapi.binance.com
-# fstream.binance.com
-#
-# dapi.binance.com
-# dstream.binance.com
-#
-# app.binance.com
 DOMAIN-SUFFIX,binance.com
-
-# ------------------------------------------
-# Binance Pay / Open Platform / Mini Program
-# ------------------------------------------
-
-# 包括：
-# bpay.binanceapi.com
-# dip-cb.binanceapi.com
+DOMAIN-SUFFIX,binance.us
 DOMAIN-SUFFIX,binanceapi.com
-
-# ------------------------------------------
-# 官方 Testnet
-# ------------------------------------------
-
-# ws-api.testnet.binance.vision 等
 DOMAIN-SUFFIX,binance.vision
 
-# ------------------------------------------
-# 官方图片 / JS / CSS / Web3 静态资源
-# ------------------------------------------
-
-# bin.bnbstatic.com
-# public.bnbstatic.com
 DOMAIN-SUFFIX,bnbstatic.com
-
-# Binance Square 等静态资源
 DOMAIN-SUFFIX,bscdnweb.com
-
-# Binance 消息 / 跳转 / 日志链路
 DOMAIN-SUFFIX,bntrace.com
+
+DOMAIN-KEYWORD,binance
