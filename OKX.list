@@ -1,27 +1,14 @@
-------------------
-OKX (欧易) 完整与安全分流规则
-------------------
-> OKX 国际主站、API 与核心服务
+# ==========================================
+# OKX
+# 目标：OKX App / Web / REST / WebSocket / Web3 / OKLink
+# ==========================================
+
+# 当前主站；自动覆盖 www/openapi/eea/wseea/wsus/web3/app 等子域
 DOMAIN-SUFFIX,okx.com
-DOMAIN-SUFFIX,okx.net
-DOMAIN-SUFFIX,okx.org
-DOMAIN-SUFFIX,okx.co
-DOMAIN-SUFFIX,okx-dns.com
-DOMAIN-SUFFIX,okx-dns1.com
-DOMAIN-SUFFIX,okx-api.com
-DOMAIN-SUFFIX,okx-pub.com
-> OKX 静态资源与 CDN
-DOMAIN-SUFFIX,okx-assets.com
-DOMAIN-SUFFIX,okx-cdn.com
-> OKX Web3 钱包、链上数据与公链生态 (防止 Web3 余额与图表加载失败)
-DOMAIN-SUFFIX,oklink.com
-DOMAIN-SUFFIX,okc.network
-> 欧易历史品牌及备用防封锁调度域名 (防止部分 APP 接口连接超时)
+
+# 历史 OKEx 兼容域
 DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,okex.net
-DOMAIN-SUFFIX,okcoin.com
-DOMAIN-SUFFIX,ouyic.com
-DOMAIN-SUFFIX,ouyi.today
-> 关键字兜底 (精准匹配动态子域名，无误杀风险)
-DOMAIN-KEYWORD,okx
-DOMAIN-KEYWORD,okex
+DOMAIN-SUFFIX,okex.org
+
+# OKLink / 链上浏览器 / Web3 静态资源
+DOMAIN-SUFFIX,oklink.com
