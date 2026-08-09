@@ -1,14 +1,47 @@
 # ==========================================
 # OKX
-# 目标：OKX App / Web / REST / WebSocket / Web3 / OKLink
+#
+# App / Web / Global
+# EEA / US / TR
+# Spot / Futures / Options
+# REST / WebSocket / Demo
+# OKX Web3 / Wallet
+# OKLink
+# OKEx 历史兼容
 # ==========================================
 
-# 当前主站；自动覆盖 www/openapi/eea/wseea/wsus/web3/app 等子域
+# ------------------------------------------
+# OKX 主域
+# ------------------------------------------
+
+# 自动覆盖：
+#
+# www.okx.com
+# openapi.okx.com
+# ws.okx.com
+# wspap.okx.com
+#
+# eea.okx.com
+# wseea.okx.com
+# wseeapap.okx.com
+#
+# us.okx.com
+# wsus.okx.com
+#
+# tr.okx.com
+#
+# web3.okx.com
 DOMAIN-SUFFIX,okx.com
 
-# 历史 OKEx 兼容域
+# ------------------------------------------
+# OKLink / Blockchain Explorer / Web3 Data
+# ------------------------------------------
+
+DOMAIN-SUFFIX,oklink.com
+
+# ------------------------------------------
+# OKEx 老品牌 / 历史兼容
+# ------------------------------------------
+
 DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,okex.org
-
-# OKLink / 链上浏览器 / Web3 静态资源
-DOMAIN-SUFFIX,oklink.com
