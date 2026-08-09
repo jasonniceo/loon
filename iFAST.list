@@ -1,30 +1,7 @@
-# > iFAST Global Bank (奕丰全球银行) 核心域名
+# ==========================================
+# iFAST Global Bank
+# 目标：iFAST GB App / Online Banking / 静态安装资源
+# ==========================================
+
+# 自动覆盖 static.ifastgb.com 等
 DOMAIN-SUFFIX,ifastgb.com
-DOMAIN-SUFFIX,ifastgb.co.uk
-
-# > iFAST Corporation 及基础架构域名
-DOMAIN-SUFFIX,ifastcorp.com
-DOMAIN-SUFFIX,ifastnetwork.com
-DOMAIN-SUFFIX,ifastfinancial.com
-DOMAIN-SUFFIX,ifasttv.com
-
-# > FSMOne (iFAST 旗下 B2C 财富管理平台)
-DOMAIN-SUFFIX,fsmone.com
-DOMAIN-SUFFIX,fsmone.com.sg
-DOMAIN-SUFFIX,fsmone.com.hk
-DOMAIN-SUFFIX,fsmone.com.my
-
-# > 补充：FSM 实际调用的全球底层接口域名 (根据抓包补充)
-DOMAIN-SUFFIX,fsm.global
-
-# > 补充：iFAST/FSM App 内置的第三方移动端安全与风控组件 (根据抓包补充)
-DOMAIN-SUFFIX,zimperium.com
-
-# > iFAST 相关 API 及认证服务
-DOMAIN-SUFFIX,ifast-auth.com
-DOMAIN-SUFFIX,ifast-api.com
-
-# > 关键字匹配 (兜底拦截)
-DOMAIN-KEYWORD,ifastgb
-DOMAIN-KEYWORD,ifastnetwork
-DOMAIN-KEYWORD,ifastcorp
