@@ -1,14 +1,48 @@
 # ==========================================
-# Maya / Maya Bank (Philippines)
-# 目标：Maya App / Wallet / Bank / Payments
+# Maya Philippines
+#
+# Maya App
+# Maya Wallet
+# Maya Savings
+# Maya Bank
+# Maya Credit
+# Maya Card
+# Maya Crypto
+# Maya Business
+# Checkout / Payment Gateway
+# API / Hosted Payment
+# PayMaya 历史兼容
 # ==========================================
 
-# Maya 主站与支付生产环境
-# pg.maya.ph / payments.maya.ph 等
+# ------------------------------------------
+# Maya 主品牌 / App
+# ------------------------------------------
+
 DOMAIN-SUFFIX,maya.ph
 
-# Maya Bank（储蓄/信贷/银行服务）
+# 自动覆盖：
+# www.maya.ph
+# pg.maya.ph
+# payments.maya.ph
+# support.maya.ph
+# developers.maya.ph
+# 以及其它 Maya 服务
+
+# ------------------------------------------
+# Maya Bank
+# ------------------------------------------
+
 DOMAIN-SUFFIX,mayabank.ph
 
-# PayMaya 历史/兼容/API 环境
+# ------------------------------------------
+# PayMaya 历史 + 当前兼容基础设施
+# ------------------------------------------
+
+# 覆盖：
+# manager.paymaya.com
+# manager-sandbox.paymaya.com
+# pg-sandbox.paymaya.com
+# payments.paymaya.com
+# payments-web-sandbox.paymaya.com
+# pbm.paymaya.com
 DOMAIN-SUFFIX,paymaya.com
