@@ -1,5 +1,11 @@
-USER-AGENT,*Neverless*
+# NAME: Neverless
+# NOTE: Legal entity names such as Boku are not used as routing keywords.
 
+# 精确主机匹配
+DOMAIN,www.neverless.com
+
+# 专属域名体系
 DOMAIN-SUFFIX,neverless.com
 
+# 品牌关键字兜底
 DOMAIN-KEYWORD,neverless
