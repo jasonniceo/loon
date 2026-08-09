@@ -1,27 +1,13 @@
-# ------------------
-#  Coinbase 完整与安全分流规则
-# ------------------
+# ==========================================
+# Coinbase
+# 目标：App / Web / Advanced Trade REST / WebSocket / Prime / 国际衍生品
+# ==========================================
 
-# > Coinbase 核心主站、API 与全系子域名
+# 主域名；自动覆盖 api.coinbase.com、
+# advanced-trade-ws.coinbase.com、
+# advanced-trade-ws-user.coinbase.com、
+# ws-feed.prime.coinbase.com 等
 DOMAIN-SUFFIX,coinbase.com
-DOMAIN-SUFFIX,coinbase.co
-DOMAIN-SUFFIX,coinbase.org
-DOMAIN-SUFFIX,coinbasecloud.dev
 
-# > Coinbase 开发者生态与区块链基础
-DOMAIN-SUFFIX,base.org
-DOMAIN-SUFFIX,cdp.coinbase.com
-
-# > Coinbase 专属静态资源与用户内容 (含 KYC 文件上传通道)
-DOMAIN-SUFFIX,coinbase-assets.com
-DOMAIN-SUFFIX,coinbaseusercontent.com
-DOMAIN-SUFFIX,cbstatic.net
-
-# > 强制绑定的第三方风控与身份验证组件 (防止 IP 割裂触发封控)
-DOMAIN-SUFFIX,sift.com
-DOMAIN-SUFFIX,siftscience.com
-DOMAIN-SUFFIX,withpersona.com
-DOMAIN-SUFFIX,jumio.com
-
-# > 关键字兜底 (极度精准，无误杀风险)
-DOMAIN-KEYWORD,coinbase
+# Coinbase/Base 身份与用户名体系
+DOMAIN-SUFFIX,cb.id
