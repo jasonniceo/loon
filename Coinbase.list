@@ -1,7 +1,22 @@
-USER-AGENT,*Coinbase*
+# NAME: Coinbase
 
+# 精确主机匹配
+DOMAIN,www.coinbase.com
+DOMAIN,api.coinbase.com
+DOMAIN,advanced-trade-ws.coinbase.com
+DOMAIN,advanced-trade-ws-user.coinbase.com
+DOMAIN,api.exchange.coinbase.com
+DOMAIN,ws-feed.exchange.coinbase.com
+DOMAIN,ws-direct.exchange.coinbase.com
+DOMAIN,fix-ord.exchange.coinbase.com
+DOMAIN,fix-md.exchange.coinbase.com
+DOMAIN,fix-dc.exchange.coinbase.com
+DOMAIN,api.developer.coinbase.com
+DOMAIN,pay.coinbase.com
+DOMAIN,drb.coinbase.com
+
+# 专属域名体系
 DOMAIN-SUFFIX,coinbase.com
 
-DOMAIN,coinbase.statuspage.io
-
+# 品牌关键字兜底
 DOMAIN-KEYWORD,coinbase
