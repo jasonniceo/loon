@@ -1,30 +1,16 @@
-USER-AGENT,*Bybit*
+# NAME: Bybit Global
+# NOTE: Deliberately excludes bybit.eu and brand-keyword fallback.
 
+# 精确主机匹配
+DOMAIN,www.bybit.com
+DOMAIN,api.bybit.com
+DOMAIN,api.bytick.com
+DOMAIN,api-testnet.bybit.com
+DOMAIN,stream.bybit.com
+DOMAIN,stream-testnet.bybit.com
+DOMAIN,stream-demo.bybit.com
+DOMAIN,i.bybit.com
+
+# 专属域名体系
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bytick.com
-
-DOMAIN-SUFFIX,bybit.tr
-DOMAIN-SUFFIX,bybit-tr.com
-DOMAIN-SUFFIX,bybit.kz
-DOMAIN-SUFFIX,bybitgeorgia.ge
-DOMAIN-SUFFIX,bybit.ae
-DOMAIN-SUFFIX,bybit.id
-
-DOMAIN-SUFFIX,bybitglobal.com
-DOMAIN-SUFFIX,bybit.info
-DOMAIN-SUFFIX,bybit.co
-DOMAIN-SUFFIX,bybit.cc
-DOMAIN-SUFFIX,bybit.hk
-DOMAIN-SUFFIX,bybit.net
-DOMAIN-SUFFIX,bybit.org
-DOMAIN-SUFFIX,bybdc6.com
-
-DOMAIN-SUFFIX,bmacdn.com
-DOMAIN-SUFFIX,bycsi.com
-DOMAIN-SUFFIX,bybitad.com
-DOMAIN-SUFFIX,bybit-affiliates.com
-
-DOMAIN,api.manepa.jp
-DOMAIN,api-testnet.manepa.jp
-
-DOMAIN,bybit-exchange.github.io
