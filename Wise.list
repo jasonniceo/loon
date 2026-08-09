@@ -1,47 +1,11 @@
-# ==========================================
-# Wise
-#
-# Wise App / Web
-# Wise Account / Card / Transfer
-# Production API
-# Open Banking
-# mTLS
-# Sandbox
-# TransferWise 历史兼容
-# ==========================================
+USER-AGENT,*Wise*
+USER-AGENT,*TransferWise*
 
-# ------------------------------------------
-# Wise 当前主域
-# ------------------------------------------
-
-# 覆盖：
-# www.wise.com
-# api.wise.com
-# Wise App/Web
 DOMAIN-SUFFIX,wise.com
-
-# ------------------------------------------
-# Wise Sandbox
-# ------------------------------------------
-
-# api.wise-sandbox.com
 DOMAIN-SUFFIX,wise-sandbox.com
 
-# ------------------------------------------
-# TransferWise 历史及当前兼容服务
-# ------------------------------------------
-
-# 覆盖：
-# api.transferwise.com
-# api-mtls.transferwise.com
-# openbanking.transferwise.com
 DOMAIN-SUFFIX,transferwise.com
-
-# ------------------------------------------
-# 历史开发环境兼容
-# 旧 Sandbox 已退出生产主路径，
-# 仅用于避免旧链路遗漏
-# ------------------------------------------
-
 DOMAIN-SUFFIX,transferwise.tech
 DOMAIN-SUFFIX,wise.tech
+
+DOMAIN-KEYWORD,transferwise
