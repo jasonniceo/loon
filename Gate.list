@@ -1,10 +1,21 @@
-USER-AGENT,*Gate*
+# NAME: Gate
+# NOTE: No DOMAIN-KEYWORD,gat* fallback because the brand term is too broad.
 
+# 精确主机匹配
+DOMAIN,www.gate.com
+DOMAIN,api.gateio.ws
+DOMAIN,fx-api.gateio.ws
+DOMAIN,api-testnet.gateapi.io
+DOMAIN,ws.gate.com
+DOMAIN,ws.gateio.com
+DOMAIN,ws.gate.io
+DOMAIN,fx-ws.gateio.ws
+DOMAIN,fx-ws-testnet.gateio.ws
+DOMAIN,ws-testnet.gate.com
+
+# 专属域名体系
 DOMAIN-SUFFIX,gate.com
 DOMAIN-SUFFIX,gate.io
+DOMAIN-SUFFIX,gateio.com
 DOMAIN-SUFFIX,gateio.ws
 DOMAIN-SUFFIX,gateapi.io
-DOMAIN-SUFFIX,gateio.io
-DOMAIN-SUFFIX,gateimg.com
-
-DOMAIN-KEYWORD,gateio
