@@ -1,5 +1,4 @@
-USER-AGENT,*Gate.io*
-USER-AGENT,*GateIO*
+USER-AGENT,*Gate*
 
 DOMAIN-SUFFIX,gate.com
 DOMAIN-SUFFIX,gate.io
