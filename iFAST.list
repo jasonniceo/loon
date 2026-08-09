@@ -1,6 +1,14 @@
-USER-AGENT,*iFAST*
-USER-AGENT,*iFASTGB*
+# NAME: iFAST Global Bank
+# NOTE: iFAST Group-wide domains are excluded to avoid other-region/product spillover.
 
+# 精确主机匹配
+DOMAIN,www.ifastgb.com
+DOMAIN,business.ifastgb.com
+DOMAIN,api-collection.ifastgb.com
+DOMAIN,static.ifastgb.com
+
+# 专属域名体系
 DOMAIN-SUFFIX,ifastgb.com
 
+# 品牌关键字兜底
 DOMAIN-KEYWORD,ifastgb
