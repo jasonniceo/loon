@@ -1,5 +1,11 @@
-USER-AGENT,*BybitEU*
+# NAME: Bybit EU
+# NOTE: Import before Bybit Global when policies differ.
+
+# 精确主机匹配
+DOMAIN,www.bybit.eu
+DOMAIN,api.bybit.eu
+DOMAIN,api3.bybit.eu
+DOMAIN,ws2.bybit.eu
+
+# 专属域名体系
 DOMAIN-SUFFIX,bybit.eu
-DOMAIN-SUFFIX,bybit.nl
-DOMAIN-SUFFIX,bybit.it
-DOMAIN-SUFFIX,bybitsatos.com
