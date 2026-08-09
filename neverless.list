@@ -1,13 +1,5 @@
-# ==========================================
-# Neverless
-#
-# App / Website
-# Crypto
-# Stocks
-# Invest
-# Strategies
-# Account
-# ==========================================
+USER-AGENT,*Neverless*
 
-# 自动覆盖所有 Neverless 自有子域
 DOMAIN-SUFFIX,neverless.com
+
+DOMAIN-KEYWORD,neverless
