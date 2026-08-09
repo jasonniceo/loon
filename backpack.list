@@ -1,4 +1,13 @@
-USER-AGENT,*Backpack*
+# NAME: Backpack
+# NOTE: Generic "backpack" keyword fallback is intentionally omitted.
 
-DOMAIN-SUFFIX,backpack.exchange
+# 精确主机匹配
+DOMAIN,www.backpack.app
+DOMAIN,docs.backpack.app
+DOMAIN,api.backpack.exchange
+DOMAIN,ws.backpack.exchange
+DOMAIN,docs.backpack.exchange
+
+# 专属域名体系
 DOMAIN-SUFFIX,backpack.app
+DOMAIN-SUFFIX,backpack.exchange
