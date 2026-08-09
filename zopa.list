@@ -1,5 +1,19 @@
 # ==========================================
-# Zopa
-# 目标：Zopa App / Web / 银行、储蓄、信用卡、贷款服务
+# Zopa Bank
+#
+# Zopa App
+# Current Account / Biscuit
+# Savings
+# Credit Card
+# Loans
+# Car Finance
+# Account
+# Help
 # ==========================================
+
+# 自动覆盖：
+#
+# www.zopa.com
+# home.zopa.com
+# help / app / account 等 Zopa 自有服务
 DOMAIN-SUFFIX,zopa.com
