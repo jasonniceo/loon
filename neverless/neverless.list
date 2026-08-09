@@ -1,5 +1,0 @@
-# > Neverless 核心官网、App 数据与 API 接口
-DOMAIN-SUFFIX,neverless.com
-
-# > 关键字匹配 (兜底拦截相关 CDN 与边缘计算服务)
-DOMAIN-KEYWORD,neverless
