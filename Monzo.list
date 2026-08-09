@@ -1,7 +1,13 @@
-USER-AGENT,*Monzo*
+# NAME: Monzo
 
+# 精确主机匹配
+DOMAIN,www.monzo.com
+DOMAIN,api.monzo.com
+DOMAIN,auth.monzo.com
+
+# 专属域名体系
 DOMAIN-SUFFIX,monzo.com
+DOMAIN-SUFFIX,monzo.me
 
-DOMAIN,monzo.statuspage.io
-
+# 品牌关键字兜底
 DOMAIN-KEYWORD,monzo
