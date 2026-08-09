@@ -1,16 +1,6 @@
-# ==========================================
-# iFAST Global Bank
-# Website / Mobile App / Online Banking
-# Login / Static / APK / Business
-# ==========================================
+USER-AGENT,*iFAST*
+USER-AGENT,*iFASTGB*
 
-# 自动覆盖：
-#
-# www.ifastgb.com
-# static.ifastgb.com
-# business.ifastgb.com
-# 登录
-# 网银
-# App
-# 下载资源
 DOMAIN-SUFFIX,ifastgb.com
+
+DOMAIN-KEYWORD,ifastgb
