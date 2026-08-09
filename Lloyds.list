@@ -1,23 +1,10 @@
-# ------------------
-#  Lloyds Bank (英国劳埃德银行) 完整与安全分流规则
-# ------------------
+# ==========================================
+# Lloyds Bank
+# 目标：官网 / Mobile Banking / Internet Banking
+# ==========================================
 
-# > 1. 核心主站、个人网银与集团现代域名
+# 官网及多数服务
 DOMAIN-SUFFIX,lloydsbank.com
+
+# Internet Banking / digital.* 等安全登录域
 DOMAIN-SUFFIX,lloydsbank.co.uk
-DOMAIN-SUFFIX,lloydsbankinggroup.com
-DOMAIN-SUFFIX,lloydsbanking.com
-
-# > 2. 集团底层基础设施与共享 API (防止风控割裂)
-DOMAIN-SUFFIX,lbg.co.uk
-
-# > 3. 极其重要的历史遗留底层域名 (Lloyds TSB 时期代码库遗留)
-DOMAIN-SUFFIX,lloydstsb.com
-DOMAIN-SUFFIX,lloydstsb.co.uk
-
-# > 4. App 与底层架构调用的第三方组件 (如 Dynatrace 环境/性能监控)
-DOMAIN-KEYWORD,dynatrace
-
-# > 5. 关键字兜底 (精准匹配新出的动态子域名，无误杀风险)
-DOMAIN-KEYWORD,lloydsbank
-DOMAIN-KEYWORD,lloydsbanking
