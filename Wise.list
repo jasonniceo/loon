@@ -1,11 +1,15 @@
-USER-AGENT,*Wise*
-USER-AGENT,*TransferWise*
+# NAME: Wise
+# NOTE: transferwise.com remains in use for verified production API services.
 
+# 精确主机匹配
+DOMAIN,www.wise.com
+DOMAIN,api.wise.com
+DOMAIN,api-mtls.transferwise.com
+DOMAIN,api.transferwise.com
+DOMAIN,api.wise-sandbox.com
+DOMAIN,api-mtls.wise-sandbox.com
+
+# 专属域名体系
 DOMAIN-SUFFIX,wise.com
-DOMAIN-SUFFIX,wise-sandbox.com
-
 DOMAIN-SUFFIX,transferwise.com
-DOMAIN-SUFFIX,transferwise.tech
-DOMAIN-SUFFIX,wise.tech
-
-DOMAIN-KEYWORD,transferwise
+DOMAIN-SUFFIX,wise-sandbox.com
