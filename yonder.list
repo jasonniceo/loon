@@ -1,5 +1,19 @@
 # ==========================================
 # Yonder
-# 目标：Yonder App / Web / 账户与卡服务
+#
+# App
+# Website
+# Debit Card
+# Credit Card
+# Rewards
+# Account
+# Application
 # ==========================================
+
+# 自动覆盖：
+# www.yonder.com
+# App/申请
+# Rewards
+# Account
+# Debit / Credit Card 页面
 DOMAIN-SUFFIX,yonder.com
