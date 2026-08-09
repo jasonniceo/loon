@@ -1,14 +1,134 @@
-# > Backpack Exchange & Wallet 全终端覆盖 (Web / iOS / Android)
+# ==========================================
+# Backpack
+#
+# Backpack Exchange
+# Backpack Wallet
+# Backpack Mobile App
+# Backpack Browser Extension
+#
+# Spot
+# Futures / Perpetuals
+# Lending
+# Wallet
+# REST API
+# WebSocket
+# Account / Portfolio
+# Deposit / Withdrawal
+# Support / Docs / Status
+# Wallet Deeplink
+# ==========================================
 
-# 1. User-Agent 规则：精准捕获 iOS/Android App 客户端流量
-USER-AGENT,Backpack*
-USER-AGENT,*backpack*
 
-# 2. 域名后缀规则：匹配 Web 端网页、底层 API 接口及相关生态
+# ==================================================
+# Backpack Exchange 主体系
+# ==================================================
+
+# 一个 DOMAIN-SUFFIX 自动覆盖：
+#
+# backpack.exchange
+# www.backpack.exchange
+#
+# REST API：
+# api.backpack.exchange
+#
+# WebSocket：
+# ws.backpack.exchange
+#
+# API Documentation：
+# docs.backpack.exchange
+#
+# Support：
+# support.backpack.exchange
+#
+# Learn / News：
+# learn.backpack.exchange
+#
+# Status：
+# status.backpack.exchange
+#
+# EU Support：
+# eu.support.backpack.exchange
+#
+# 登录
+# Portfolio
+# Spot
+# Futures
+# Lending
+# Deposit
+# Withdrawal
+# Account Settings
+# API Keys
+#
+# 以及未来任何 *.backpack.exchange
 DOMAIN-SUFFIX,backpack.exchange
-DOMAIN-SUFFIX,backpack.app
-DOMAIN-SUFFIX,xnft.gg
-DOMAIN-SUFFIX,coral.community
 
-# 3. 关键字规则：兜底拦截，覆盖可能遗漏的静态资源 CDN 
-DOMAIN-KEYWORD,backpack
+
+# ==================================================
+# Backpack Wallet / Mobile App / Browser Extension
+# ==================================================
+
+# Backpack 当前钱包及统一 Crypto App 主域
+#
+# 自动覆盖：
+#
+# backpack.app
+# www.backpack.app
+#
+# Wallet
+# Mobile App
+# Browser Extension
+# Download
+# Deeplink
+# Universal Link
+# Wallet Connect
+# Wallet Documentation
+#
+# docs.backpack.app
+#
+# 以及未来任何 *.backpack.app
+DOMAIN-SUFFIX,backpack.app
+
+
+# ==================================================
+# 说明
+# ==================================================
+
+# Backpack 官方 REST：
+# https://api.backpack.exchange/
+#
+# Backpack 官方 WebSocket：
+# wss://ws.backpack.exchange/
+#
+# 新版 WebSocket：
+# wss://ws.backpack.exchange
+#
+# 旧版 /stream WebSocket 同样属于：
+# ws.backpack.exchange
+#
+# 所以不需要重复单独写：
+#
+# DOMAIN,api.backpack.exchange
+# DOMAIN,ws.backpack.exchange
+#
+# DOMAIN-SUFFIX,backpack.exchange 已经全部覆盖。
+
+
+# ==================================================
+# 不建议加入
+# ==================================================
+
+# 不要添加：
+#
+# DOMAIN-KEYWORD,backpack
+#
+# 原因：
+# Backpack 是普通英文单词，
+# 关键字规则有明显误匹配风险。
+#
+# 只使用：
+#
+# backpack.exchange
+# backpack.app
+#
+# 两个官方根域即可。
+# ==================================================
