@@ -1,10 +1,13 @@
 # ==========================================
 # Lloyds Bank
-# 目标：官网 / Mobile Banking / Internet Banking
+# Personal Banking / Mobile Banking
+# Internet Banking / International
+# Business / Credit Card / Savings
 # ==========================================
 
-# 官网及多数服务
+# 官网及官方在线服务
 DOMAIN-SUFFIX,lloydsbank.com
 
-# Internet Banking / digital.* 等安全登录域
+# Lloyds 历史/邮件/兼容域
+# 保留用于旧链路和部分服务兼容
 DOMAIN-SUFFIX,lloydsbank.co.uk
