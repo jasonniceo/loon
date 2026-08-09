@@ -1,13 +1,20 @@
 # ==========================================
 # Coinbase
-# 目标：App / Web / Advanced Trade REST / WebSocket / Prime / 国际衍生品
+# App / Web / Advanced Trade
+# Spot / Derivatives
+# REST / WebSocket / 静态资源
 # ==========================================
 
-# 主域名；自动覆盖 api.coinbase.com、
-# advanced-trade-ws.coinbase.com、
-# advanced-trade-ws-user.coinbase.com、
-# ws-feed.prime.coinbase.com 等
+# 一个根域覆盖 Coinbase 自有核心体系：
+#
+# www.coinbase.com
+# api.coinbase.com
+#
+# advanced-trade-ws.coinbase.com
+# advanced-trade-ws-user.coinbase.com
+#
+# static-assets.coinbase.com
+# dynamic-assets.coinbase.com
+#
+# 其它 *.coinbase.com
 DOMAIN-SUFFIX,coinbase.com
-
-# Coinbase/Base 身份与用户名体系
-DOMAIN-SUFFIX,cb.id
