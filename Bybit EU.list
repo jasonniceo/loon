@@ -1,20 +1,50 @@
 # ==========================================
-# Bybit EU - 欧洲合规版独立规则
-# 必须优先于 BYbit.list / Global / GEOIP / FINAL
+# Bybit EU
+# 欧洲 / EEA 独立规则
+#
+# 必须高于：
+# Bybit Global
+# GEOIP
+# DIRECT
+# MATCH / FINAL
 # ==========================================
 
-# EU 主域名；自动覆盖 api3.bybit.eu、ws2.bybit.eu 等所有子域
+# ------------------------------------------
+# EU 主站 / App / API / WebSocket
+# ------------------------------------------
+
+# 自动覆盖：
+# bybit.eu
+# www.bybit.eu
+# api.bybit.eu
+# api2.bybit.eu
+# api3.bybit.eu
+# ws.bybit.eu
+# ws2.bybit.eu
+# 以及未来任何 *.bybit.eu
 DOMAIN-SUFFIX,bybit.eu
 
-# 欧洲版/历史/地区域名
+# 荷兰区域
+# 官方 API 包括 api.bybit.nl
 DOMAIN-SUFFIX,bybit.nl
+
+# 你现有 EU 兼容域
 DOMAIN-SUFFIX,bybit.it
 DOMAIN-SUFFIX,bybitsatos.com
 
-# EU App UA 辅助匹配；不能替代域名规则
+# ------------------------------------------
+# Bybit EU App UA 辅助
+# ------------------------------------------
+
 USER-AGENT,BybitEU*
 
-# 严禁加入：
+# ==========================================
+# 禁止加入：
+#
 # DOMAIN-KEYWORD,bybit
 # DOMAIN-KEYWORD,bytick
-# 也不要把 bytick.com 强行放进 EU；它保留给 Bybit Global。
+#
+# 否则会再次出现：
+# api3.bybit.eu -> Global / DIRECT
+# ws2.bybit.eu  -> Global / DIRECT
+# ==========================================
