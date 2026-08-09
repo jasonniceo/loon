@@ -1,2 +1,15 @@
-USER-AGENT,*Altery*
+# NAME: Altery
+
+# 精确主机匹配
+DOMAIN,api.altery.com
+DOMAIN,api.sandbox.altery.com
+DOMAIN,app.sandbox.altery.com
+DOMAIN,docs.altery.com
+DOMAIN,help.altery.com
+DOMAIN,status.altery.com
+
+# 专属域名体系
 DOMAIN-SUFFIX,altery.com
+
+# 品牌关键字兜底
+DOMAIN-KEYWORD,altery
