@@ -1,12 +1,30 @@
-USER-AGENT,*Binance*
+# NAME: Binance Global
+# NOTE: Deliberately excludes binance.us and keyword fallback.
 
+# 精确主机匹配
+DOMAIN,www.binance.com
+DOMAIN,api.binance.com
+DOMAIN,api-gcp.binance.com
+DOMAIN,api1.binance.com
+DOMAIN,api2.binance.com
+DOMAIN,api3.binance.com
+DOMAIN,api4.binance.com
+DOMAIN,stream.binance.com
+DOMAIN,data-api.binance.vision
+DOMAIN,data-stream.binance.vision
+DOMAIN,fapi.binance.com
+DOMAIN,dapi.binance.com
+DOMAIN,eapi.binance.com
+DOMAIN,ws-fapi.binance.com
+DOMAIN,fstream.binance.com
+DOMAIN,dstream.binance.com
+DOMAIN,testnet.binance.vision
+DOMAIN,testnet.binancefuture.com
+DOMAIN,bin.bnbstatic.com
+DOMAIN,public.bnbstatic.com
+
+# 专属域名体系
 DOMAIN-SUFFIX,binance.com
-DOMAIN-SUFFIX,binance.us
-DOMAIN-SUFFIX,binanceapi.com
 DOMAIN-SUFFIX,binance.vision
-
+DOMAIN-SUFFIX,binancefuture.com
 DOMAIN-SUFFIX,bnbstatic.com
-DOMAIN-SUFFIX,bscdnweb.com
-DOMAIN-SUFFIX,bntrace.com
-
-DOMAIN-KEYWORD,binance
