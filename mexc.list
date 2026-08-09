@@ -1,7 +1,18 @@
 # ==========================================
 # MEXC
-# 目标：MEXC App / Spot / Futures / REST / WebSocket
+#
+# App / Web
+# Spot / Futures
+# REST / WebSocket
+# User Stream
+# Contract
 # ==========================================
 
-# api.mexc.com / contract.mexc.com 等全部覆盖
+# 一个根域自动覆盖：
+#
+# www.mexc.com
+# api.mexc.com
+# wbs-api.mexc.com
+# contract.mexc.com
+# MEXC Spot / Futures / App 等
 DOMAIN-SUFFIX,mexc.com
