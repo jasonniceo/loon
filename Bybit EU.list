@@ -1,50 +1,5 @@
-# ==========================================
-# Bybit EU
-# 欧洲 / EEA 独立规则
-#
-# 必须高于：
-# Bybit Global
-# GEOIP
-# DIRECT
-# MATCH / FINAL
-# ==========================================
-
-# ------------------------------------------
-# EU 主站 / App / API / WebSocket
-# ------------------------------------------
-
-# 自动覆盖：
-# bybit.eu
-# www.bybit.eu
-# api.bybit.eu
-# api2.bybit.eu
-# api3.bybit.eu
-# ws.bybit.eu
-# ws2.bybit.eu
-# 以及未来任何 *.bybit.eu
+USER-AGENT,*BybitEU*
 DOMAIN-SUFFIX,bybit.eu
-
-# 荷兰区域
-# 官方 API 包括 api.bybit.nl
 DOMAIN-SUFFIX,bybit.nl
-
-# 你现有 EU 兼容域
 DOMAIN-SUFFIX,bybit.it
 DOMAIN-SUFFIX,bybitsatos.com
-
-# ------------------------------------------
-# Bybit EU App UA 辅助
-# ------------------------------------------
-
-USER-AGENT,BybitEU*
-
-# ==========================================
-# 禁止加入：
-#
-# DOMAIN-KEYWORD,bybit
-# DOMAIN-KEYWORD,bytick
-#
-# 否则会再次出现：
-# api3.bybit.eu -> Global / DIRECT
-# ws2.bybit.eu  -> Global / DIRECT
-# ==========================================
