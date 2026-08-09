@@ -1,19 +1,7 @@
-# ==========================================
-# Yonder
-#
-# App
-# Website
-# Debit Card
-# Credit Card
-# Rewards
-# Account
-# Application
-# ==========================================
+USER-AGENT,*Yonder*
+USER-AGENT,*YonderCard*
 
-# 自动覆盖：
-# www.yonder.com
-# App/申请
-# Rewards
-# Account
-# Debit / Credit Card 页面
 DOMAIN-SUFFIX,yonder.com
+DOMAIN-SUFFIX,yondercard.com
+
+DOMAIN-KEYWORD,yondercard
