@@ -1,19 +1,6 @@
-# ==========================================
-# ether.fi
-#
-# Website
-# ether.fi App
-# Cash
-# Card
-# Earn
-# Staking
-# Help Center
-# ==========================================
+USER-AGENT,*ether.fi*
+USER-AGENT,*EtherFi*
 
-# 自动覆盖：
-#
-# www.ether.fi
-# app.ether.fi
-# help.ether.fi
-# Cash / Card / Earn / Staking
 DOMAIN-SUFFIX,ether.fi
+
+DOMAIN-KEYWORD,etherfi
