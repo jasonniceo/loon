@@ -1,15 +1,12 @@
-# ==========================================
-# Starryblu
-# App / Web
-# Account / Global Transfer
-# Multi-Currency / Card / Security
-# Blog / SG 地区入口
-# ==========================================
+# NAME: Starryblu
+# NOTE: Panda Remit is a sister product and is intentionally not absorbed here.
 
-# 自动覆盖：
-#
-# www.starryblu.com
-# sg.starryblu.com
-# 其它地区子域
-# App / 登录 / 支付 / 安全页面
+# 精确主机匹配
+DOMAIN,www.starryblu.com
+DOMAIN,blog.starryblu.com
+
+# 专属域名体系
 DOMAIN-SUFFIX,starryblu.com
+
+# 品牌关键字兜底
+DOMAIN-KEYWORD,starryblu
