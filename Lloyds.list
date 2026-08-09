@@ -1,8 +1,13 @@
-USER-AGENT,*Lloyds*
-USER-AGENT,*LloydsBank*
+# NAME: Lloyds Bank
+# NOTE: Lloyds Banking Group-wide domains are excluded to avoid other-brand spillover.
 
+# 精确主机匹配
+DOMAIN,www.lloydsbank.com
+DOMAIN,online.lloydsbank.co.uk
+
+# 专属域名体系
 DOMAIN-SUFFIX,lloydsbank.com
 DOMAIN-SUFFIX,lloydsbank.co.uk
-DOMAIN-SUFFIX,lloydsbankinggroup.com
 
+# 品牌关键字兜底
 DOMAIN-KEYWORD,lloydsbank
