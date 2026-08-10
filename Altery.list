@@ -1,15 +1,19 @@
-# NAME: Altery
-
-# 精确主机匹配
+#Altery
+#精确主机匹配
 DOMAIN,api.altery.com
-DOMAIN,api.sandbox.altery.com
-DOMAIN,app.sandbox.altery.com
-DOMAIN,docs.altery.com
-DOMAIN,help.altery.com
-DOMAIN,status.altery.com
+DOMAIN,app.altery.com
+DOMAIN,auth.altery.com
+DOMAIN,web.altery.com
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,altery.com
+DOMAIN-SUFFIX,altery.pay
+DOMAIN-SUFFIX,altery.co.uk
 
-# 品牌关键字兜底
+#客户端特征匹配
+USER-AGENT,Altery*
+PROCESS-NAME,com.altery.app
+PROCESS-NAME,Altery
+
+#品牌关键字兜底
 DOMAIN-KEYWORD,altery
