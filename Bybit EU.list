@@ -1,11 +1,21 @@
-# NAME: Bybit EU
-# NOTE: Import before Bybit Global when policies differ.
-
-# 精确主机匹配
-DOMAIN,www.bybit.eu
+#Bybit EU
+#精确主机匹配
+DOMAIN,api.bybit.nl
+DOMAIN,www.bybit.nl
 DOMAIN,api.bybit.eu
-DOMAIN,api3.bybit.eu
-DOMAIN,ws2.bybit.eu
+DOMAIN,www.bybit.eu
 
-# 专属域名体系
+#专属域名体系
+DOMAIN-SUFFIX,bybit.nl
 DOMAIN-SUFFIX,bybit.eu
+
+#专属业务依赖
+DOMAIN-SUFFIX,bybit-eu.com
+
+#客户端特征匹配
+USER-AGENT,BybitEU*
+USER-AGENT,Bybit*EU*
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,bybit-eu
+DOMAIN-KEYWORD,bybiteu
