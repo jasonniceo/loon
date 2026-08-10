@@ -1,12 +1,18 @@
-# NAME: Starryblu
-# NOTE: Panda Remit is a sister product and is intentionally not absorbed here.
-
-# 精确主机匹配
+#Starryblu
+#精确主机匹配
+DOMAIN,api.starryblu.com
 DOMAIN,www.starryblu.com
-DOMAIN,blog.starryblu.com
+DOMAIN,app.starryblu.com
+DOMAIN,auth.starryblu.com
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,starryblu.com
+DOMAIN-SUFFIX,starryblu.io
+DOMAIN-SUFFIX,starryblu.app
 
-# 品牌关键字兜底
+#客户端特征匹配
+USER-AGENT,Starryblu*
+PROCESS-NAME,com.starryblu.app
+
+#品牌关键字兜底
 DOMAIN-KEYWORD,starryblu
