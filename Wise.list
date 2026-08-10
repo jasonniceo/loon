@@ -1,15 +1,24 @@
-# NAME: Wise
-# NOTE: transferwise.com remains in use for verified production API services.
-
-# 精确主机匹配
-DOMAIN,www.wise.com
+#Wise
+#精确主机匹配
 DOMAIN,api.wise.com
-DOMAIN,api-mtls.transferwise.com
+DOMAIN,wise.com
+DOMAIN,auth.wise.com
+DOMAIN,transferwise.com
 DOMAIN,api.transferwise.com
-DOMAIN,api.wise-sandbox.com
-DOMAIN,api-mtls.wise-sandbox.com
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,transferwise.com
-DOMAIN-SUFFIX,wise-sandbox.com
+DOMAIN-SUFFIX,wise.prd.aws
+
+#专属业务依赖
+DOMAIN-SUFFIX,wise-assets.com
+
+#客户端特征匹配
+USER-AGENT,Wise*
+USER-AGENT,TransferWise*
+PROCESS-NAME,com.transferwise.android
+PROCESS-NAME,Wise
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,transferwise
