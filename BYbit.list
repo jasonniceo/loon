@@ -1,16 +1,30 @@
-# NAME: Bybit Global
-# NOTE: Deliberately excludes bybit.eu and brand-keyword fallback.
-
-# 精确主机匹配
-DOMAIN,www.bybit.com
+#Bybit Global
+#精确主机匹配
 DOMAIN,api.bybit.com
-DOMAIN,api.bytick.com
-DOMAIN,api-testnet.bybit.com
 DOMAIN,stream.bybit.com
-DOMAIN,stream-testnet.bybit.com
-DOMAIN,stream-demo.bybit.com
-DOMAIN,i.bybit.com
+DOMAIN,api.bytick.com
+DOMAIN,stream.bytick.com
+DOMAIN,www.bybit.com
+DOMAIN,app.bybit.com
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bybit.biz
 DOMAIN-SUFFIX,bytick.com
+DOMAIN-SUFFIX,byapps.net
+DOMAIN-SUFFIX,bybit.global
+DOMAIN-SUFFIX,bycsi.com
+
+#专属业务依赖
+DOMAIN-SUFFIX,bybit-global.com
+DOMAIN-SUFFIX,bybitstatic.com
+
+#客户端特征匹配
+USER-AGENT,Bybit*
+USER-AGENT,BybitApp*
+PROCESS-NAME,com.bybit.app
+PROCESS-NAME,Bybit.exe
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,bybit
+DOMAIN-KEYWORD,bytick
