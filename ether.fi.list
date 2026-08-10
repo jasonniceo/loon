@@ -1,17 +1,18 @@
-# NAME: ether.fi
-
-# 精确主机匹配
-DOMAIN,www.ether.fi
+#ether.fi
+#精确主机匹配
 DOMAIN,app.ether.fi
-DOMAIN,help.ether.fi
-DOMAIN,withdraw.ether.fi
-DOMAIN,vote.ether.fi
+DOMAIN,api.ether.fi
+DOMAIN,www.ether.fi
+DOMAIN,auth.ether.fi
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,ether.fi
+DOMAIN-SUFFIX,etherfi.io
 
-# 品牌关键字兜底
+#客户端特征匹配
+USER-AGENT,ether.fi*
+USER-AGENT,EtherFi*
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,ether.fi
 DOMAIN-KEYWORD,etherfi
-
-# 共享基础设施依赖
-DOMAIN,etherfi.gitbook.io
