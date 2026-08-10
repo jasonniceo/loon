@@ -1,13 +1,24 @@
-# NAME: Lloyds Bank
-# NOTE: Lloyds Banking Group-wide domains are excluded to avoid other-brand spillover.
-
-# 精确主机匹配
-DOMAIN,www.lloydsbank.com
+#Lloyds
+#精确主机匹配
+DOMAIN,api.lloydsbank.co.uk
 DOMAIN,online.lloydsbank.co.uk
+DOMAIN,www.lloydsbank.com
+DOMAIN,mobile.lloydsbank.co.uk
 
-# 专属域名体系
-DOMAIN-SUFFIX,lloydsbank.com
+#专属域名体系
 DOMAIN-SUFFIX,lloydsbank.co.uk
+DOMAIN-SUFFIX,lloydsbank.com
+DOMAIN-SUFFIX,lloydsbankinggroup.com
+DOMAIN-SUFFIX,lloydsbank.info
 
-# 品牌关键字兜底
+#专属业务依赖
+DOMAIN-SUFFIX,lloydsbank-online.co.uk
+
+#客户端特征匹配
+USER-AGENT,Lloyds*
+USER-AGENT,LloydsBank*
+PROCESS-NAME,com.grppl.mcd.lloyds.lloydsdirectconsumer
+
+#品牌关键字兜底
 DOMAIN-KEYWORD,lloydsbank
+DOMAIN-KEYWORD,lloyds
