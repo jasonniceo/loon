@@ -1,22 +1,27 @@
-# NAME: Coinbase
-
-# 精确主机匹配
-DOMAIN,www.coinbase.com
+#Coinbase
+#精确主机匹配
 DOMAIN,api.coinbase.com
-DOMAIN,advanced-trade-ws.coinbase.com
-DOMAIN,advanced-trade-ws-user.coinbase.com
-DOMAIN,api.exchange.coinbase.com
 DOMAIN,ws-feed.exchange.coinbase.com
-DOMAIN,ws-direct.exchange.coinbase.com
-DOMAIN,fix-ord.exchange.coinbase.com
-DOMAIN,fix-md.exchange.coinbase.com
-DOMAIN,fix-dc.exchange.coinbase.com
-DOMAIN,api.developer.coinbase.com
-DOMAIN,pay.coinbase.com
-DOMAIN,drb.coinbase.com
+DOMAIN,api.exchange.coinbase.com
+DOMAIN,www.coinbase.com
+DOMAIN,auth.coinbase.com
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,coinbase.org
+DOMAIN-SUFFIX,cb-analytics.com
+DOMAIN-SUFFIX,coinbase-corp.com
+DOMAIN-SUFFIX,coinbaseusercontent.com
 
-# 品牌关键字兜底
+#专属业务依赖
+DOMAIN-SUFFIX,prime.coinbase.com
+DOMAIN-SUFFIX,pro.coinbase.com
+
+#客户端特征匹配
+USER-AGENT,Coinbase*
+USER-AGENT,CoinbaseApp*
+PROCESS-NAME,com.coinbase.android
+PROCESS-NAME,Coinbase.exe
+
+#品牌关键字兜底
 DOMAIN-KEYWORD,coinbase
