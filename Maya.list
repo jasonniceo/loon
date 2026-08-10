@@ -1,22 +1,22 @@
-# NAME: Maya
-# NOTE: paymaya.com is Maya's verified legacy/service domain.
-
-# 精确主机匹配
+#Maya
+#精确主机匹配
+DOMAIN,api.maya.ph
 DOMAIN,www.maya.ph
-DOMAIN,pg.maya.ph
-DOMAIN,payments.maya.ph
-DOMAIN,manager.paymaya.com
-DOMAIN,connect.paymaya.com
-DOMAIN,api.paymaya.com
-DOMAIN,op.paymaya.com
-DOMAIN,payments.paymaya.com
-DOMAIN,pg-sandbox.paymaya.com
-DOMAIN,payments-web-sandbox.paymaya.com
-DOMAIN,manager-sandbox.paymaya.com
-DOMAIN,connect-sb-issuing.paymaya.com
-DOMAIN,op-sandbox.paymaya.com
-DOMAIN,sandbox.api.maya.ph
+DOMAIN,auth.maya.ph
+DOMAIN,app.maya.ph
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,maya.ph
 DOMAIN-SUFFIX,paymaya.com
+DOMAIN-SUFFIX,mayabank.ph
+
+#专属业务依赖
+DOMAIN-SUFFIX,paymaya.ph
+
+#客户端特征匹配
+USER-AGENT,Maya*
+USER-AGENT,PayMaya*
+PROCESS-NAME,com.paymaya
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,paymaya
