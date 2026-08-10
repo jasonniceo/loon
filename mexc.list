@@ -1,18 +1,24 @@
-# NAME: MEXC
-
-# 精确主机匹配
-DOMAIN,www.mexc.com
+#MEXC
+#精确主机匹配
 DOMAIN,api.mexc.com
-DOMAIN,contract.mexc.com
+DOMAIN,wss.mexc.com
+DOMAIN,www.mexc.com
+DOMAIN,app.mexc.com
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,mexc.com
+DOMAIN-SUFFIX,mexc.link
+DOMAIN-SUFFIX,mexcsv.com
+DOMAIN-SUFFIX,mexc.co
 
-# 专属业务依赖
-DOMAIN,static.mocortech.com
+#专属业务依赖
+DOMAIN-SUFFIX,mexcstatic.com
 
-# 品牌关键字兜底
+#客户端特征匹配
+USER-AGENT,MEXC*
+USER-AGENT,MEXCApp*
+PROCESS-NAME,com.mexc.app
+PROCESS-NAME,MEXC.exe
+
+#品牌关键字兜底
 DOMAIN-KEYWORD,mexc
-
-# 共享基础设施依赖
-DOMAIN,mexc.onelink.me
