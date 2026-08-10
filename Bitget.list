@@ -1,19 +1,26 @@
-# NAME: Bitget
-
-# 精确主机匹配
-DOMAIN,www.bitget.com
+#Bitget
+#精确主机匹配
 DOMAIN,api.bitget.com
-DOMAIN,ws.bitget.com
-DOMAIN,vip-api-uta-a.bitget.com
-DOMAIN,vip-ws-uta-pub-a.bitget.com
-DOMAIN,vip-ws-uta-pri-a.bitget.com
-DOMAIN,vip-api-uta.bitget.com
-DOMAIN,vip-ws-uta.bitget.com
-DOMAIN,img.bitgetimg.com
+DOMAIN,stream.bitget.com
+DOMAIN,www.bitget.com
+DOMAIN,app.bitget.com
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,bitget.com
+DOMAIN-SUFFIX,bitget.site
+DOMAIN-SUFFIX,bitget.vip
 DOMAIN-SUFFIX,bitgetimg.com
+DOMAIN-SUFFIX,bgapp.net
+DOMAIN-SUFFIX,bitget.cloud
 
-# 品牌关键字兜底
+#专属业务依赖
+DOMAIN-SUFFIX,bitgetapp.com
+
+#客户端特征匹配
+USER-AGENT,Bitget*
+USER-AGENT,BitgetApp*
+PROCESS-NAME,com.bitget.app
+PROCESS-NAME,Bitget.exe
+
+#品牌关键字兜底
 DOMAIN-KEYWORD,bitget
