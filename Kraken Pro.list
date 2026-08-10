@@ -1,0 +1,22 @@
+#Kraken Pro
+#精确主机匹配
+DOMAIN,pro.kraken.com
+DOMAIN,ws-pro.kraken.com
+DOMAIN,api.pro.kraken.com
+DOMAIN,futures.kraken.com
+
+#专属域名体系
+DOMAIN-SUFFIX,pro.kraken.com
+DOMAIN-SUFFIX,trade.kraken.com
+DOMAIN-SUFFIX,futures.kraken.com
+
+#专属业务依赖
+DOMAIN-SUFFIX,cryptowat.ch
+
+#客户端特征匹配
+USER-AGENT,KrakenPro*
+USER-AGENT,Kraken Pro*
+PROCESS-NAME,com.kraken.trade
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,krakenpro
