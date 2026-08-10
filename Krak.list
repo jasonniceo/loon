@@ -1,0 +1,16 @@
+#Krak
+#精确主机匹配
+DOMAIN,api.krak.app
+DOMAIN,www.krak.app
+DOMAIN,auth.krak.app
+
+#专属域名体系
+DOMAIN-SUFFIX,krak.app
+DOMAIN-SUFFIX,krak.io
+
+#客户端特征匹配
+USER-AGENT,Krak*
+PROCESS-NAME,com.kraken.krak
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,krakapp
