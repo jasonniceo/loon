@@ -1,14 +1,28 @@
-# NAME: iFAST Global Bank
-# NOTE: iFAST Group-wide domains are excluded to avoid other-region/product spillover.
-
-# 精确主机匹配
+#iFAST
+#精确主机匹配
+DOMAIN,api.ifastfinancial.com
+DOMAIN,www.ifastgp.com
+DOMAIN,www.ifastcorp.com
 DOMAIN,www.ifastgb.com
-DOMAIN,business.ifastgb.com
-DOMAIN,api-collection.ifastgb.com
-DOMAIN,static.ifastgb.com
+DOMAIN,www.ifastfinancial.hk
 
-# 专属域名体系
+#专属域名体系
+DOMAIN-SUFFIX,ifastcorp.com
+DOMAIN-SUFFIX,ifastgp.com
 DOMAIN-SUFFIX,ifastgb.com
+DOMAIN-SUFFIX,ifastfinancial.com
+DOMAIN-SUFFIX,ifastfinancial.hk
+DOMAIN-SUFFIX,ifastfinancial.com.sg
+DOMAIN-SUFFIX,ifastps.com
 
-# 品牌关键字兜底
-DOMAIN-KEYWORD,ifastgb
+#专属业务依赖
+DOMAIN-SUFFIX,ifastnetwork.com
+
+#客户端特征匹配
+USER-AGENT,iFAST*
+USER-AGENT,iFASTGlobalBank*
+PROCESS-NAME,com.ifastgb.mobile
+PROCESS-NAME,com.ifast.mobile
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,ifast
