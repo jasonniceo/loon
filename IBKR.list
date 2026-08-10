@@ -1,15 +1,28 @@
-# NAME: Interactive Brokers (IBKR)
-
-# 精确主机匹配
+#IBKR
+#精确主机匹配
+DOMAIN,api.interactivebrokers.com
 DOMAIN,www.interactivebrokers.com
-DOMAIN,api.ibkr.com
-DOMAIN,ibkrcampus.com
+DOMAIN,ndw.interactivebrokers.com
+DOMAIN,sso.interactivebrokers.com
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,interactivebrokers.com
-DOMAIN-SUFFIX,interactivebrokers.co.uk
 DOMAIN-SUFFIX,ibkr.com
-DOMAIN-SUFFIX,ibkrcampus.com
+DOMAIN-SUFFIX,ibkr.info
+DOMAIN-SUFFIX,interactivebrokers.co.uk
+DOMAIN-SUFFIX,interactivebrokers.com.au
+DOMAIN-SUFFIX,interactivebrokers.eu
 
-# 品牌关键字兜底
+#专属业务依赖
+DOMAIN-SUFFIX,ibllc.com
+
+#客户端特征匹配
+USER-AGENT,IBKR*
+USER-AGENT,TWS*
+USER-AGENT,IBKey*
+PROCESS-NAME,com.ibkr.mobile
+PROCESS-NAME,tws.exe
+
+#品牌关键字兜底
 DOMAIN-KEYWORD,interactivebrokers
+DOMAIN-KEYWORD,ibkr
