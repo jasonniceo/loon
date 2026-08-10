@@ -1,8 +1,0 @@
-# NAME: Yonder
-# NOTE: The generic word "yonder" is not used as a keyword fallback.
-
-# 精确主机匹配
-DOMAIN,www.yonder.com
-
-# 专属域名体系
-DOMAIN-SUFFIX,yonder.com

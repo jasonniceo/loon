@@ -1,0 +1,17 @@
+#Yonder
+#精确主机匹配
+DOMAIN,api.yondercard.com
+DOMAIN,www.yondercard.com
+DOMAIN,auth.yondercard.com
+DOMAIN,app.yondercard.com
+
+#专属域名体系
+DOMAIN-SUFFIX,yondercard.com
+DOMAIN-SUFFIX,yonder.com
+
+#客户端特征匹配
+USER-AGENT,Yonder*
+PROCESS-NAME,com.yonder.card
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,yondercard
