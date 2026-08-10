@@ -1,13 +1,21 @@
-# NAME: Coins.ph
-
-# 精确主机匹配
+#Coins.ph
+#精确主机匹配
+DOMAIN,api.coins.ph
 DOMAIN,www.coins.ph
-DOMAIN,www.pro.coins.ph
-DOMAIN,api.pro.coins.ph
-DOMAIN,wsapi.pro.coins.ph
+DOMAIN,auth.coins.ph
+DOMAIN,app.coins.ph
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,coins.ph
+DOMAIN-SUFFIX,coins.asia
+DOMAIN-SUFFIX,coins.co
 
-# 专属业务依赖
-DOMAIN,static.pro.coins.xyz
+#客户端特征匹配
+USER-AGENT,Coins*
+USER-AGENT,CoinsPH*
+PROCESS-NAME,asia.coins.mobile
+PROCESS-NAME,Coins
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,coins.ph
+DOMAIN-KEYWORD,coinsph
