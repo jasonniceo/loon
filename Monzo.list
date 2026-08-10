@@ -1,13 +1,22 @@
-# NAME: Monzo
-
-# 精确主机匹配
-DOMAIN,www.monzo.com
+#Monzo
+#精确主机匹配
 DOMAIN,api.monzo.com
 DOMAIN,auth.monzo.com
+DOMAIN,www.monzo.com
+DOMAIN,web.monzo.com
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,monzo.com
 DOMAIN-SUFFIX,monzo.me
+DOMAIN-SUFFIX,monzodigital.com
 
-# 品牌关键字兜底
+#专属业务依赖
+DOMAIN-SUFFIX,monzo-assets.com
+
+#客户端特征匹配
+USER-AGENT,Monzo*
+PROCESS-NAME,co.uk.monzo
+PROCESS-NAME,Monzo
+
+#品牌关键字兜底
 DOMAIN-KEYWORD,monzo
