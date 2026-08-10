@@ -1,17 +1,27 @@
-# NAME: OKX
-# NOTE: Includes verified Global and EEA service hosts under the same OKX app family.
-
-# 精确主机匹配
+#OKX
+#精确主机匹配
+DOMAIN,api.okx.com
+DOMAIN,aws.okx.com
 DOMAIN,www.okx.com
-DOMAIN,openapi.okx.com
+DOMAIN,app.okx.com
 DOMAIN,ws.okx.com
-DOMAIN,wspap.okx.com
-DOMAIN,eea.okx.com
-DOMAIN,wseea.okx.com
-DOMAIN,wseeapap.okx.com
-DOMAIN,my.okx.com
-DOMAIN,tr.okx.com
-DOMAIN,static.okx.com
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,okx.com
+DOMAIN-SUFFIX,okex.com
+DOMAIN-SUFFIX,okx-dns.com
+DOMAIN-SUFFIX,okx-dns1.com
+DOMAIN-SUFFIX,okxcdn.com
+
+#专属业务依赖
+DOMAIN-SUFFIX,okx-static.com
+
+#客户端特征匹配
+USER-AGENT,OKX*
+USER-AGENT,OKEx*
+PROCESS-NAME,com.okinc.okex.gp
+PROCESS-NAME,OKX.exe
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,okx
+DOMAIN-KEYWORD,okex
