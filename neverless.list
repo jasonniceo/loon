@@ -1,11 +1,18 @@
-# NAME: Neverless
-# NOTE: Legal entity names such as Boku are not used as routing keywords.
-
-# 精确主机匹配
+#Neverless
+#精确主机匹配
+DOMAIN,api.neverless.com
 DOMAIN,www.neverless.com
+DOMAIN,auth.neverless.com
+DOMAIN,app.neverless.com
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,neverless.com
+DOMAIN-SUFFIX,neverless.io
+DOMAIN-SUFFIX,neverless.app
 
-# 品牌关键字兜底
+#客户端特征匹配
+USER-AGENT,Neverless*
+PROCESS-NAME,com.neverless.app
+
+#品牌关键字兜底
 DOMAIN-KEYWORD,neverless
