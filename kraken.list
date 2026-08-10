@@ -1,17 +1,22 @@
-# NAME: Kraken (shared core layer)
-# NOTE: Import product-specific 19-22 lists before this broad core layer.
-
-# 精确主机匹配
-DOMAIN,www.kraken.com
-DOMAIN,id.kraken.com
+#Kraken
+#精确主机匹配
 DOMAIN,api.kraken.com
 DOMAIN,ws.kraken.com
-DOMAIN,ws-auth.kraken.com
-DOMAIN,ws-l3.kraken.com
-DOMAIN,futures.kraken.com
-DOMAIN,docs.kraken.com
-DOMAIN,support.kraken.com
-DOMAIN,assets-cms.kraken.com
+DOMAIN,www.kraken.com
+DOMAIN,auth.kraken.com
 
-# 专属域名体系
+#专属域名体系
 DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,payward.com
+
+#专属业务依赖
+DOMAIN-SUFFIX,krakencdn.com
+
+#客户端特征匹配
+USER-AGENT,Kraken*
+USER-AGENT,KrakenApp*
+PROCESS-NAME,com.kraken.invest.app
+PROCESS-NAME,Kraken
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,kraken
