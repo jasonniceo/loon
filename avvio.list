@@ -1,0 +1,12 @@
+#精确主机匹配
+DOMAIN,avvio.xyz
+DOMAIN,www.avvio.xyz
+
+#专属域名体系
+DOMAIN-SUFFIX,avvio.xyz
+
+#客户端特征匹配
+USER-AGENT,Avvio*
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,avvio
