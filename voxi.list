@@ -1,0 +1,17 @@
+#精确主机匹配
+DOMAIN,voxi.co.uk
+DOMAIN,www.voxi.co.uk
+DOMAIN,help.voxi.co.uk
+DOMAIN,voxi-prod1.waf.digital-prod.vodafoneaws.co.uk
+
+#专属域名体系
+DOMAIN-SUFFIX,voxi.co.uk
+
+#专属业务依赖
+URL-REGEX,"^https://(images|assets)\.ctfassets\.net/49k3mgcbymb9/.*"
+
+#品牌关键字兜底
+DOMAIN-KEYWORD,voxi
+
+#共享基础设施依赖
+DOMAIN,images.vodafone.co.uk
