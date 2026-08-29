@@ -24,4 +24,4 @@ http-response https://api.finka.cn/vas/nearby/v2 script-path=https://gist.github
 http-request https://(gethornet.com|api.finka.cn|api.sqaces.com|api.theorangemeetingplace.com).* script-path=https://gist.githubusercontent.com/jasonniceo/e3019ef1b5442814d5d3274557d1a1a1/raw/Finka.js, requires-body=true, enable = {arg5}, tag=Finka_location
 
 [MITM]
-hostname = api.finka.cn, gethornet.com, api.theorangemeetingplace.com, api.sqaces.com, social.blued.cn, argo.blued.cn, *.bldimg.com, ulogs.umengcloud.com, 220.249.135.81, 182.91.254.69, 61.182.143.92, 110.242.21.49, 123.126.74.232, 60.5.255.204, 125.38.212.83, 240.0.0.25
+hostname = api.finka.cn, gethornet.com, api.theorangemeetingplace.com, api.sqaces.com, social.blued.cn, argo.blued.cn, *.bldimg.com, ulogs.umengcloud.com
