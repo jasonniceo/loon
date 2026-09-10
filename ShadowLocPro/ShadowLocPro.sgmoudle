@@ -5,10 +5,10 @@
 #!system=ios
 
 [Script]
-ShadowLocSaveLocation = type=http-request,pattern=^https:\/\/shadowloc\.ericvip\.workers\.dev\/api\/save-location,requires-body=false,timeout=10,script-path=https://gist.githubusercontent.com/Alex0510/79eaef62a56a0ea3f3045f7a3c48a7c5/raw/ShadowLocSaveLocation.js
-ShadowLocStatus = type=http-request,pattern=^https:\/\/shadowloc\.ericvip\.workers\.dev\/api\/location-status,requires-body=false,timeout=10,script-path=https://gist.githubusercontent.com/Alex0510/79eaef62a56a0ea3f3045f7a3c48a7c5/raw/ShadowLocStatus.js
-ShadowLocClear = type=http-request,pattern=^https:\/\/shadowloc\.ericvip\.workers\.dev\/api\/clear-location,requires-body=false,timeout=10,script-path=https://gist.githubusercontent.com/Alex0510/79eaef62a56a0ea3f3045f7a3c48a7c5/raw/ShadowLocClear.js
-ShadowLocPro = type=http-response,pattern=^https:\/\/gs-loc(-cn)?\.apple\.com\/clls\/wloc,requires-body=true,binary-body-mode=true,max-size=0,timeout=30,script-path=https://gist.githubusercontent.com/Alex0510/79eaef62a56a0ea3f3045f7a3c48a7c5/raw/ShadowLocPro.js
+ShadowLocSaveLocation = type=http-request,pattern=^https:\/\/shadowloc\.ericvip\.workers\.dev\/api\/save-location,requires-body=false,timeout=10,script-path=https://raw.githubusercontent.com/jasonniceo/loon/refs/heads/main/ShadowLocPro/ShadowLocSaveLocation.js
+ShadowLocStatus = type=http-request,pattern=^https:\/\/shadowloc\.ericvip\.workers\.dev\/api\/location-status,requires-body=false,timeout=10,script-path=https://raw.githubusercontent.com/jasonniceo/loon/refs/heads/main/ShadowLocPro/ShadowLocStatus.js
+ShadowLocClear = type=http-request,pattern=^https:\/\/shadowloc\.ericvip\.workers\.dev\/api\/clear-location,requires-body=false,timeout=10,script-path=https://raw.githubusercontent.com/jasonniceo/loon/refs/heads/main/ShadowLocPro/ShadowLocClear.js
+ShadowLocPro = type=http-response,pattern=^https:\/\/gs-loc(-cn)?\.apple\.com\/clls\/wloc,requires-body=true,binary-body-mode=true,max-size=0,timeout=30,script-path=https://raw.githubusercontent.com/jasonniceo/loon/refs/heads/main/ShadowLocPro/ShadowLocPro.js
 
 [MITM]
 hostname = %APPEND% shadowloc.ericvip.workers.dev, gs-loc.apple.com, gs-loc-cn.apple.com
