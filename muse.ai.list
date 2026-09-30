@@ -1,28 +1,9 @@
-# ==========================================
-# Muse.ai / Skiv
-# Loon Rule Set
-# ==========================================
-
-# Skiv 新域名
 DOMAIN-SUFFIX,skiv.com
-
-# Muse.ai 旧域名 / Legacy
 DOMAIN-SUFFIX,muse.ai
-
-# Skiv API
+DOMAIN-SUFFIX,meta.ai
 DOMAIN,api.skiv.com
-
-# Muse.ai Legacy API
 DOMAIN,api.muse.ai
-
-# Skiv Embed
 DOMAIN,embed.skiv.com
-
-# Muse.ai Legacy Embed
 DOMAIN,embed.muse.ai
-
-# Skiv Static Resources
 DOMAIN,static.skiv.com
-
-# Muse.ai Legacy Static Resources
 DOMAIN,static.muse.ai
